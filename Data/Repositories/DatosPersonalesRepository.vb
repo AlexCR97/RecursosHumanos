@@ -2,8 +2,8 @@
 Imports Entities
 
 Public Class DatosPersonalesRepository
-    Inherits MasterRepository
-    Implements GenericContract(Of DatosPersonales)
+    Inherits MasterRepository(Of DatosPersonales)
+    Implements IGenericContract(Of DatosPersonales)
 
     Public Sub New()
         queryInsert = "insert into datos_personales values (
@@ -33,9 +33,11 @@ Public Class DatosPersonalesRepository
             biografia = @biografia
             where id_usuario = @id_usuario"
         querySelect = "select * from datos_personales"
+        querySelectId = "select * from datos_personales where id_usuario = @id_usuario"
+
     End Sub
 
-    Public Function Insert(e As DatosPersonales) As Boolean Implements GenericContract(Of DatosPersonales).Insert
+    Public Function Insert(e As DatosPersonales) As Boolean Implements IGenericContract(Of DatosPersonales).Insert
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", e.IdUsuario)
         parameters.Add("@nombre", e.Nombre)
@@ -51,13 +53,13 @@ Public Class DatosPersonalesRepository
         Return ExecuteQuery(queryInsert)
     End Function
 
-    Public Function Delete(id As Object) As Boolean Implements GenericContract(Of DatosPersonales).Delete
+    Public Function Delete(id As Object) As Boolean Implements IGenericContract(Of DatosPersonales).Delete
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", id)
         Return ExecuteQuery(queryDelete)
     End Function
 
-    Public Function Update(e As DatosPersonales) As Boolean Implements GenericContract(Of DatosPersonales).Update
+    Public Function Update(e As DatosPersonales) As Boolean Implements IGenericContract(Of DatosPersonales).Update
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", e.IdUsuario)
         parameters.Add("@nombre", e.Nombre)
@@ -73,7 +75,7 @@ Public Class DatosPersonalesRepository
         Return ExecuteQuery(queryUpdate)
     End Function
 
-    Public Function SelectAll() As List(Of DatosPersonales) Implements GenericContract(Of DatosPersonales).SelectAll
+    Public Function SelectAll() As List(Of DatosPersonales) Implements IGenericContract(Of DatosPersonales).SelectAll
         Dim dataTable = ExecuteSelect(querySelect)
         Dim datosPersonales As New List(Of DatosPersonales)
 
@@ -110,4 +112,49 @@ Public Class DatosPersonalesRepository
         Return datosPersonales
     End Function
 
+    Public Function SelectWithId(id As Object) As DatosPersonales Implements IGenericContract(Of DatosPersonales).SelectWithId
+        parameters = New Dictionary(Of String, Object)
+        parameters.Add("@id_usuario", id)
+
+        Dim dataTable = ExecuteSelect(querySelectId)
+        Dim datosPersonales As DatosPersonales
+
+        For Each row As DataRow In dataTable.Rows
+            Dim idUsuario = row.Field(Of String)("id_usuario")
+            Dim nombre = row.Field(Of String)("nombre")
+            Dim apellidoPaterno = row.Field(Of String)("apellido_paterno")
+            Dim apellidoMaterno = row.Field(Of String)("apellido_materno")
+            Dim sexo = row.Field(Of String)("sexo")
+            Dim paisNacimiento = row.Field(Of String)("pais_nacimiento")
+            Dim fechaNacimiento = row.Field(Of DateTime)("fecha_nacimiento")
+            Dim curp = row.Field(Of String)("curp")
+            Dim rfc = row.Field(Of String)("rfc")
+            Dim cvu = row.Field(Of String)("cvu")
+            Dim biografia = row.Field(Of String)("biografia")
+
+            datosPersonales = New DatosPersonales With {
+                .IdUsuario = idUsuario,
+                .Nombre = nombre,
+                .ApellidoPaterno = apellidoPaterno,
+                .ApellidoMaterno = apellidoMaterno,
+                .Sexo = sexo,
+                .PaisNacimiento = paisNacimiento,
+                .FechaNacimiento = fechaNacimiento,
+                .Curp = curp,
+                .Rfc = rfc,
+                .Cvu = cvu,
+                .Biografia = biografia
+            }
+        Next
+
+        Return datosPersonales
+    End Function
+
+    Public Function SelectAllWithId(id As Object) As List(Of DatosPersonales) Implements IGenericContract(Of DatosPersonales).SelectAllWithId
+        Throw New NotImplementedException()
+    End Function
+
+    Public Function DeleteSpecific(e As DatosPersonales) As Boolean Implements IGenericContract(Of DatosPersonales).DeleteSpecific
+        Throw New NotImplementedException()
+    End Function
 End Class

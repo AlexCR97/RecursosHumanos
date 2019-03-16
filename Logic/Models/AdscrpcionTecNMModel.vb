@@ -2,7 +2,7 @@
 Imports Entities
 
 Public Class AdscrpcionTecNMModel
-    Inherits Model
+    Inherits Model(Of AdscripcionTecNM)
 
     Public Entity As AdscripcionTecNM
     Private repository = New AdscripcionTecNMRepository()
@@ -17,20 +17,28 @@ Public Class AdscrpcionTecNMModel
 
     Public Overrides Function ExecuteChanges() As Boolean
         Select Case State
-            Case Model.STATE_INSERT
+            Case STATE_INSERT
                 Return repository.Insert(Entity)
 
-            Case Model.STATE_DELETE
+            Case STATE_DELETE
                 Return repository.Delete(Entity.IdUsuario)
 
-            Case Model.STATE_UPDATE
+            Case STATE_UPDATE
                 Return repository.Update(Entity)
         End Select
 
         Return False
     End Function
 
-    Public Overrides Function GetEntities() As List(Of Object)
+    Public Overrides Function GetEntities() As List(Of AdscripcionTecNM)
         Return repository.SelectAll()
+    End Function
+
+    Public Overrides Function GetEntityWithId() As AdscripcionTecNM
+        Throw New NotImplementedException()
+    End Function
+
+    Public Overrides Function GetEntitiesWithId() As List(Of AdscripcionTecNM)
+        Throw New NotImplementedException()
     End Function
 End Class

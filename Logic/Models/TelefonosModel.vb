@@ -2,10 +2,10 @@
 Imports Entities
 
 Public Class TelefonosModel
-    Inherits Model
+    Inherits Model(Of Telefonos)
 
     Public Entity As Telefonos
-    Private repository = New TelefonosRepository()
+    Private repository As TelefonosRepository = New TelefonosRepository()
 
     Public Sub New()
 
@@ -17,20 +17,31 @@ Public Class TelefonosModel
 
     Public Overrides Function ExecuteChanges() As Boolean
         Select Case State
-            Case Model.STATE_INSERT
+            Case STATE_INSERT
                 Return repository.Insert(Entity)
 
-            Case Model.STATE_DELETE
+            Case STATE_DELETE
                 Return repository.Delete(Entity.IdUsuario)
 
-            Case Model.STATE_UPDATE
+            Case STATE_UPDATE
                 Return repository.Update(Entity)
+
+            Case STATE_DELETE_SPECIFIC
+                Return repository.DeleteSpecific(Entity)
         End Select
 
         Return False
     End Function
 
-    Public Overrides Function GetEntities() As List(Of Object)
+    Public Overrides Function GetEntities() As List(Of Telefonos)
         Return repository.SelectAll()
+    End Function
+
+    Public Overrides Function GetEntityWithId() As Telefonos
+        Throw New NotImplementedException()
+    End Function
+
+    Public Overrides Function GetEntitiesWithId() As List(Of Telefonos)
+        Return repository.SelectAllWithId(Entity.IdUsuario)
     End Function
 End Class

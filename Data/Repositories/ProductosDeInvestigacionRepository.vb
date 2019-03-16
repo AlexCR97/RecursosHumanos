@@ -2,8 +2,8 @@
 Imports Entities
 
 Public Class ProductosDeInvestigacionRepository
-    Inherits MasterRepository
-    Implements GenericContract(Of ProductosDeInvestigacion)
+    Inherits MasterRepository(Of ProductosDeInvestigacion)
+    Implements IGenericContract(Of ProductosDeInvestigacion)
 
     Public Sub New()
         queryInsert = "insert into productos_de_investigacion values (@id_usuario, @titulo, @proposito, @fecha_publicacion, @tipo_producto)"
@@ -18,7 +18,7 @@ Public Class ProductosDeInvestigacionRepository
         querySelect = "select * from productos_de_investigacion"
     End Sub
 
-    Public Function Insert(e As ProductosDeInvestigacion) As Boolean Implements GenericContract(Of ProductosDeInvestigacion).Insert
+    Public Function Insert(e As ProductosDeInvestigacion) As Boolean Implements IGenericContract(Of ProductosDeInvestigacion).Insert
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", e.IdUsuario)
         parameters.Add("@titulo", e.Titulo)
@@ -28,13 +28,13 @@ Public Class ProductosDeInvestigacionRepository
         Return ExecuteQuery(queryInsert)
     End Function
 
-    Public Function Delete(id As Object) As Boolean Implements GenericContract(Of ProductosDeInvestigacion).Delete
+    Public Function Delete(id As Object) As Boolean Implements IGenericContract(Of ProductosDeInvestigacion).Delete
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", id)
         Return ExecuteQuery(queryDelete)
     End Function
 
-    Public Function Update(e As ProductosDeInvestigacion) As Boolean Implements GenericContract(Of ProductosDeInvestigacion).Update
+    Public Function Update(e As ProductosDeInvestigacion) As Boolean Implements IGenericContract(Of ProductosDeInvestigacion).Update
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", e.IdUsuario)
         parameters.Add("@titulo", e.Titulo)
@@ -44,7 +44,7 @@ Public Class ProductosDeInvestigacionRepository
         Return ExecuteQuery(queryUpdate)
     End Function
 
-    Public Function SelectAll() As List(Of ProductosDeInvestigacion) Implements GenericContract(Of ProductosDeInvestigacion).SelectAll
+    Public Function SelectAll() As List(Of ProductosDeInvestigacion) Implements IGenericContract(Of ProductosDeInvestigacion).SelectAll
         Dim dataTable = ExecuteSelect(querySelect)
         Dim productosDeInvestigacion As New List(Of ProductosDeInvestigacion)
 
@@ -67,5 +67,17 @@ Public Class ProductosDeInvestigacionRepository
         Next
 
         Return productosDeInvestigacion
+    End Function
+
+    Public Function SelectWithId(id As Object) As ProductosDeInvestigacion Implements IGenericContract(Of ProductosDeInvestigacion).SelectWithId
+        Throw New NotImplementedException()
+    End Function
+
+    Public Function SelectAllWithId(id As Object) As List(Of ProductosDeInvestigacion) Implements IGenericContract(Of ProductosDeInvestigacion).SelectAllWithId
+        Throw New NotImplementedException()
+    End Function
+
+    Public Function DeleteSpecific(e As ProductosDeInvestigacion) As Boolean Implements IGenericContract(Of ProductosDeInvestigacion).DeleteSpecific
+        Throw New NotImplementedException()
     End Function
 End Class

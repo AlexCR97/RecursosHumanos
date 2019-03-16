@@ -2,8 +2,8 @@
 Imports Entities
 
 Public Class CertificacionesRepository
-    Inherits MasterRepository
-    Implements GenericContract(Of Certificaciones)
+    Inherits MasterRepository(Of Certificaciones)
+    Implements IGenericContract(Of Certificaciones)
 
     Public Sub New()
         queryInsert = "insert into certificaciones values (@id_usuario, @id_institucion, @descripcion, @fecha_certificacion, @fecha_limite)"
@@ -18,7 +18,7 @@ Public Class CertificacionesRepository
         querySelect = "select * from certificaciones"
     End Sub
 
-    Public Function Insert(e As Certificaciones) As Boolean Implements GenericContract(Of Certificaciones).Insert
+    Public Function Insert(e As Certificaciones) As Boolean Implements IGenericContract(Of Certificaciones).Insert
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", e.IdUsuario)
         parameters.Add("@id_institucion", e.IdInstitucion)
@@ -28,13 +28,13 @@ Public Class CertificacionesRepository
         Return ExecuteQuery(queryInsert)
     End Function
 
-    Public Function Delete(id As Object) As Boolean Implements GenericContract(Of Certificaciones).Delete
+    Public Function Delete(id As Object) As Boolean Implements IGenericContract(Of Certificaciones).Delete
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", id)
         Return ExecuteQuery(queryDelete)
     End Function
 
-    Public Function Update(e As Certificaciones) As Boolean Implements GenericContract(Of Certificaciones).Update
+    Public Function Update(e As Certificaciones) As Boolean Implements IGenericContract(Of Certificaciones).Update
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", e.IdUsuario)
         parameters.Add("@id_institucion", e.IdInstitucion)
@@ -44,7 +44,7 @@ Public Class CertificacionesRepository
         Return ExecuteQuery(queryUpdate)
     End Function
 
-    Public Function SelectAll() As List(Of Certificaciones) Implements GenericContract(Of Certificaciones).SelectAll
+    Public Function SelectAll() As List(Of Certificaciones) Implements IGenericContract(Of Certificaciones).SelectAll
         Dim dataTable = ExecuteSelect(querySelect)
         Dim certificaciones As New List(Of Certificaciones)
 
@@ -67,5 +67,17 @@ Public Class CertificacionesRepository
         Next
 
         Return certificaciones
+    End Function
+
+    Public Function SelectWithId(id As Object) As Certificaciones Implements IGenericContract(Of Certificaciones).SelectWithId
+        Throw New NotImplementedException()
+    End Function
+
+    Public Function SelectAllWithId(id As Object) As List(Of Certificaciones) Implements IGenericContract(Of Certificaciones).SelectAllWithId
+        Throw New NotImplementedException()
+    End Function
+
+    Public Function DeleteSpecific(e As Certificaciones) As Boolean Implements IGenericContract(Of Certificaciones).DeleteSpecific
+        Throw New NotImplementedException()
     End Function
 End Class

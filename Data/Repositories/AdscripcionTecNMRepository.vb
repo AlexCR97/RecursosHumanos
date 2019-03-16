@@ -2,8 +2,8 @@
 Imports Entities
 
 Public Class AdscripcionTecNMRepository
-    Inherits MasterRepository
-    Implements GenericContract(Of AdscripcionTecNM)
+    Inherits MasterRepository(Of AdscripcionTecNM)
+    Implements IGenericContract(Of AdscripcionTecNM)
 
     Public Sub New()
         queryInsert = "insert into adscripcion_tecnm values (@id_usuario, @plantel, @fecha_adscripcion, @vigente)"
@@ -17,7 +17,7 @@ Public Class AdscripcionTecNMRepository
         querySelect = "select * from adscripcion_tecnm"
     End Sub
 
-    Public Function Insert(e As AdscripcionTecNM) As Boolean Implements GenericContract(Of AdscripcionTecNM).Insert
+    Public Function Insert(e As AdscripcionTecNM) As Boolean Implements IGenericContract(Of AdscripcionTecNM).Insert
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", e.IdUsuario)
         parameters.Add("@plantel", e.Plantel)
@@ -26,13 +26,13 @@ Public Class AdscripcionTecNMRepository
         Return ExecuteQuery(queryInsert)
     End Function
 
-    Public Function Delete(id As Object) As Boolean Implements GenericContract(Of AdscripcionTecNM).Delete
+    Public Function Delete(id As Object) As Boolean Implements IGenericContract(Of AdscripcionTecNM).Delete
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", id)
         Return ExecuteQuery(queryDelete)
     End Function
 
-    Public Function Update(e As AdscripcionTecNM) As Boolean Implements GenericContract(Of AdscripcionTecNM).Update
+    Public Function Update(e As AdscripcionTecNM) As Boolean Implements IGenericContract(Of AdscripcionTecNM).Update
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", e.IdUsuario)
         parameters.Add("@plantel", e.Plantel)
@@ -41,7 +41,7 @@ Public Class AdscripcionTecNMRepository
         Return ExecuteQuery(queryUpdate)
     End Function
 
-    Public Function SelectAll() As List(Of AdscripcionTecNM) Implements GenericContract(Of AdscripcionTecNM).SelectAll
+    Public Function SelectAll() As List(Of AdscripcionTecNM) Implements IGenericContract(Of AdscripcionTecNM).SelectAll
         Dim dataTable = ExecuteSelect(querySelect)
         Dim adscripciones As New List(Of AdscripcionTecNM)
 
@@ -62,5 +62,17 @@ Public Class AdscripcionTecNMRepository
         Next
 
         Return adscripciones
+    End Function
+
+    Public Function SelectWithId(id As Object) As AdscripcionTecNM Implements IGenericContract(Of AdscripcionTecNM).SelectWithId
+        Throw New NotImplementedException()
+    End Function
+
+    Public Function SelectAllWithId(id As Object) As List(Of AdscripcionTecNM) Implements IGenericContract(Of AdscripcionTecNM).SelectAllWithId
+        Throw New NotImplementedException()
+    End Function
+
+    Public Function DeleteSpecific(e As AdscripcionTecNM) As Boolean Implements IGenericContract(Of AdscripcionTecNM).DeleteSpecific
+        Throw New NotImplementedException()
     End Function
 End Class

@@ -73,12 +73,174 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomControls\AgregarButton.Designer.vb">
+      <DependentUpon>AgregarButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\AgregarButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\CancelarButton.Designer.vb">
+      <DependentUpon>CancelarButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\CancelarButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\CustomDataGridView.Designer.vb">
+      <DependentUpon>CustomDataGridView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\CustomDataGridView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\EditarButton.Designer.vb">
+      <DependentUpon>EditarButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\EditarButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\EliminarButton.Designer.vb">
+      <DependentUpon>EliminarButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\EliminarButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\GuardarButton.Designer.vb">
+      <DependentUpon>GuardarButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\GuardarButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dialogues\CustomDialog.Designer.vb">
+      <DependentUpon>CustomDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\CustomDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogues\DatosGenerales\CorreosDialog.Designer.vb">
+      <DependentUpon>CorreosDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\DatosGenerales\CorreosDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogues\DatosGenerales\OtrosMediosDialog.Designer.vb">
+      <DependentUpon>OtrosMediosDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\DatosGenerales\OtrosMediosDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogues\DatosGenerales\PerfilYCuentaDialog.Designer.vb">
+      <DependentUpon>PerfilYCuentaDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\DatosGenerales\PerfilYCuentaDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogues\DatosGenerales\TelefonosDialog.Designer.vb">
+      <DependentUpon>TelefonosDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\DatosGenerales\TelefonosDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomForm.Designer.vb">
+      <DependentUpon>CustomForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Aplicaciones\AplicacionesModule.Designer.vb">
+      <DependentUpon>AplicacionesModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Aplicaciones\AplicacionesModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Aplicaciones\AplicacionesVinculadasModule.Designer.vb">
+      <DependentUpon>AplicacionesVinculadasModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Aplicaciones\AplicacionesVinculadasModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DatosGenerales\DatosDeContactoModule.Designer.vb">
+      <DependentUpon>DatosDeContactoModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DatosGenerales\DatosDeContactoModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DatosGenerales\DatosGeneralesModule.Designer.vb">
+      <DependentUpon>DatosGeneralesModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DatosGenerales\DatosGeneralesModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DatosGenerales\DatosLaboralesModule.Designer.vb">
+      <DependentUpon>DatosLaboralesModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DatosGenerales\DatosLaboralesModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DatosGenerales\PerfilYCuentaModule.Designer.vb">
+      <DependentUpon>PerfilYCuentaModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DatosGenerales\PerfilYCuentaModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MainMenuModule.Designer.vb">
+      <DependentUpon>MainMenuModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MainMenuModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MenuBarModule.Designer.vb">
+      <DependentUpon>MenuBarModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MenuBarModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PerfilAcademico\AsociacionesModule.Designer.vb">
+      <DependentUpon>AsociacionesModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PerfilAcademico\AsociacionesModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PerfilAcademico\DistincionesModule.Designer.vb">
+      <DependentUpon>DistincionesModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PerfilAcademico\DistincionesModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PerfilAcademico\PerfilAcademicoModule.Designer.vb">
+      <DependentUpon>PerfilAcademicoModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PerfilAcademico\PerfilAcademicoModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PerfilAcademico\ProductividadAcademicaModule.Designer.vb">
+      <DependentUpon>ProductividadAcademicaModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PerfilAcademico\ProductividadAcademicaModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PerfilAcademico\TitulosAcademicosModule.Designer.vb">
+      <DependentUpon>TitulosAcademicosModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PerfilAcademico\TitulosAcademicosModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\SideBarModule.Designer.vb">
+      <DependentUpon>SideBarModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SideBarModule.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -97,6 +259,90 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CustomControls\AgregarButton.resx">
+      <DependentUpon>AgregarButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\CancelarButton.resx">
+      <DependentUpon>CancelarButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\CustomDataGridView.resx">
+      <DependentUpon>CustomDataGridView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\EditarButton.resx">
+      <DependentUpon>EditarButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\EliminarButton.resx">
+      <DependentUpon>EliminarButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\GuardarButton.resx">
+      <DependentUpon>GuardarButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\CustomDialog.resx">
+      <DependentUpon>CustomDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\DatosGenerales\CorreosDialog.resx">
+      <DependentUpon>CorreosDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\DatosGenerales\OtrosMediosDialog.resx">
+      <DependentUpon>OtrosMediosDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\DatosGenerales\PerfilYCuentaDialog.resx">
+      <DependentUpon>PerfilYCuentaDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\DatosGenerales\TelefonosDialog.resx">
+      <DependentUpon>TelefonosDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomForm.resx">
+      <DependentUpon>CustomForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Aplicaciones\AplicacionesModule.resx">
+      <DependentUpon>AplicacionesModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Aplicaciones\AplicacionesVinculadasModule.resx">
+      <DependentUpon>AplicacionesVinculadasModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DatosGenerales\DatosDeContactoModule.resx">
+      <DependentUpon>DatosDeContactoModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DatosGenerales\DatosGeneralesModule.resx">
+      <DependentUpon>DatosGeneralesModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DatosGenerales\DatosLaboralesModule.resx">
+      <DependentUpon>DatosLaboralesModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DatosGenerales\PerfilYCuentaModule.resx">
+      <DependentUpon>PerfilYCuentaModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MainMenuModule.resx">
+      <DependentUpon>MainMenuModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MenuBarModule.resx">
+      <DependentUpon>MenuBarModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PerfilAcademico\AsociacionesModule.resx">
+      <DependentUpon>AsociacionesModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PerfilAcademico\DistincionesModule.resx">
+      <DependentUpon>DistincionesModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PerfilAcademico\PerfilAcademicoModule.resx">
+      <DependentUpon>PerfilAcademicoModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PerfilAcademico\ProductividadAcademicaModule.resx">
+      <DependentUpon>ProductividadAcademicaModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PerfilAcademico\TitulosAcademicosModule.resx">
+      <DependentUpon>TitulosAcademicosModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SideBarModule.resx">
+      <DependentUpon>SideBarModule.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -117,9 +363,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Modules\Aplicaciones\" />
-    <Folder Include="Modules\DatosGenerales\" />
-    <Folder Include="Modules\PerfilAcademico\" />
+    <Folder Include="Dialogues\Aplicaciones\" />
+    <Folder Include="Dialogues\PerfilAcademico\" />
     <Folder Include="Modules\Resumen\" />
   </ItemGroup>
   <ItemGroup>
@@ -131,6 +376,27 @@
       <Project>{928e838e-e7c7-45ec-8903-542efb6b446f}</Project>
       <Name>Logic</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageSep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconContrasena.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconCorreo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconLogout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconEditBlack.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

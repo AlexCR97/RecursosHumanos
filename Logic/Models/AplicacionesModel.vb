@@ -2,7 +2,7 @@
 Imports Entities
 
 Public Class AplicacionesModel
-    Inherits Model
+    Inherits Model(Of Aplicaciones)
 
     Public Entity As Aplicaciones
     Private repository = New AplicacionesRepository
@@ -17,20 +17,28 @@ Public Class AplicacionesModel
 
     Public Overrides Function ExecuteChanges() As Boolean
         Select Case State
-            Case Model.STATE_INSERT
+            Case STATE_INSERT
                 Return repository.Insert(Entity)
 
-            Case Model.STATE_DELETE
+            Case STATE_DELETE
                 Return repository.Delete(Entity.IdUsuario)
 
-            Case Model.STATE_UPDATE
+            Case STATE_UPDATE
                 Return repository.Update(Entity)
         End Select
 
         Return False
     End Function
 
-    Public Overrides Function GetEntities() As List(Of Object)
+    Public Overrides Function GetEntities() As List(Of Aplicaciones)
         Return repository.SelectAll()
+    End Function
+
+    Public Overrides Function GetEntityWithId() As Aplicaciones
+        Throw New NotImplementedException()
+    End Function
+
+    Public Overrides Function GetEntitiesWithId() As List(Of Aplicaciones)
+        Throw New NotImplementedException()
     End Function
 End Class

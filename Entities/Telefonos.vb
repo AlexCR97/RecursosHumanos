@@ -1,6 +1,6 @@
 ﻿Public Class Telefonos
 
-    Public IdUsuario As String
-    Public Telefono As String
+    Public Property IdUsuario As String
+    Public Property Telefono As String
 
 End Class

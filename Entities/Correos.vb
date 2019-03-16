@@ -1,6 +1,6 @@
 ﻿Public Class Correos
 
-    Public IdUsuario As String
-    Public Correo As String
+    Public Property IdUsuario As String
+    Public Property Correo As String
 
 End Class

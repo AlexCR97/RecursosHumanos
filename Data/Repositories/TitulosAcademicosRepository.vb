@@ -2,8 +2,8 @@
 Imports Entities
 
 Public Class TitulosAcademicosRepository
-    Inherits MasterRepository
-    Implements GenericContract(Of TitulosAcademicos)
+    Inherits MasterRepository(Of TitulosAcademicos)
+    Implements IGenericContract(Of TitulosAcademicos)
 
     Public Sub New()
         queryInsert = "insert into titulos_academicos values (@id_usuario, @id_insitucion, @grado, @titulo, @fecha_obtencion, @numero_cedula)"
@@ -19,7 +19,7 @@ Public Class TitulosAcademicosRepository
         querySelect = "select * from titulos_academidos where id_usuario = @id_usuario"
     End Sub
 
-    Public Function Insert(e As TitulosAcademicos) As Boolean Implements GenericContract(Of TitulosAcademicos).Insert
+    Public Function Insert(e As TitulosAcademicos) As Boolean Implements IGenericContract(Of TitulosAcademicos).Insert
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", e.IdUsuario)
         parameters.Add("@id_institucion", e.IdInstitucion)
@@ -30,13 +30,13 @@ Public Class TitulosAcademicosRepository
         Return ExecuteQuery(queryInsert)
     End Function
 
-    Public Function Delete(id As Object) As Boolean Implements GenericContract(Of TitulosAcademicos).Delete
+    Public Function Delete(id As Object) As Boolean Implements IGenericContract(Of TitulosAcademicos).Delete
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", id)
         Return ExecuteQuery(queryDelete)
     End Function
 
-    Public Function Update(e As TitulosAcademicos) As Boolean Implements GenericContract(Of TitulosAcademicos).Update
+    Public Function Update(e As TitulosAcademicos) As Boolean Implements IGenericContract(Of TitulosAcademicos).Update
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", e.IdUsuario)
         parameters.Add("@id_institucion", e.IdInstitucion)
@@ -47,7 +47,7 @@ Public Class TitulosAcademicosRepository
         Return ExecuteQuery(queryUpdate)
     End Function
 
-    Public Function SelectAll() As List(Of TitulosAcademicos) Implements GenericContract(Of TitulosAcademicos).SelectAll
+    Public Function SelectAll() As List(Of TitulosAcademicos) Implements IGenericContract(Of TitulosAcademicos).SelectAll
         Dim dataTable = ExecuteSelect(querySelect)
         Dim titulosAcademicos As New List(Of TitulosAcademicos)
 
@@ -72,5 +72,17 @@ Public Class TitulosAcademicosRepository
         Next
 
         Return titulosAcademicos
+    End Function
+
+    Public Function SelectWithId(id As Object) As TitulosAcademicos Implements IGenericContract(Of TitulosAcademicos).SelectWithId
+        Throw New NotImplementedException()
+    End Function
+
+    Public Function SelectAllWithId(id As Object) As List(Of TitulosAcademicos) Implements IGenericContract(Of TitulosAcademicos).SelectAllWithId
+        Throw New NotImplementedException()
+    End Function
+
+    Public Function DeleteSpecific(e As TitulosAcademicos) As Boolean Implements IGenericContract(Of TitulosAcademicos).DeleteSpecific
+        Throw New NotImplementedException()
     End Function
 End Class

@@ -2,10 +2,10 @@
 Imports Entities
 
 Public Class DatosPersonalesModel
-    Inherits Model
+    Inherits Model(Of DatosPersonales)
 
     Public Entity As DatosPersonales
-    Private repository = New DatosPersonales()
+    Private repository = New DatosPersonalesRepository()
 
     Public Sub New()
 
@@ -17,20 +17,28 @@ Public Class DatosPersonalesModel
 
     Public Overrides Function ExecuteChanges() As Boolean
         Select Case State
-            Case Model.STATE_INSERT
+            Case STATE_INSERT
                 Return repository.Insert(Entity)
 
-            Case Model.STATE_DELETE
+            Case STATE_DELETE
                 Return repository.Delete(Entity.IdUsuario)
 
-            Case Model.STATE_UPDATE
+            Case STATE_UPDATE
                 Return repository.Update(Entity)
         End Select
 
         Return False
     End Function
 
-    Public Overrides Function GetEntities() As List(Of Object)
+    Public Overrides Function GetEntities() As List(Of DatosPersonales)
         Return repository.SelectAll()
+    End Function
+
+    Public Overrides Function GetEntityWithId() As DatosPersonales
+        Return repository.SelectWithId(Entity.IdUsuario)
+    End Function
+
+    Public Overrides Function GetEntitiesWithId() As List(Of DatosPersonales)
+        Throw New NotImplementedException()
     End Function
 End Class

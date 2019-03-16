@@ -2,8 +2,8 @@
 Imports Entities
 
 Public Class AsociacionesRepository
-    Inherits MasterRepository
-    Implements GenericContract(Of Asociaciones)
+    Inherits MasterRepository(Of Asociaciones)
+    Implements IGenericContract(Of Asociaciones)
 
     Public Sub New()
         queryInsert = "insert into asociaciones values (@id_usuario, @organismo, @nombramiento, @anio_afiliacion, @inicio_vigencia, @fin_vigencia)"
@@ -19,7 +19,7 @@ Public Class AsociacionesRepository
         querySelect = "select * from asociaciones"
     End Sub
 
-    Public Function Insert(e As Asociaciones) As Boolean Implements GenericContract(Of Asociaciones).Insert
+    Public Function Insert(e As Asociaciones) As Boolean Implements IGenericContract(Of Asociaciones).Insert
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", e.IdUsuario)
         parameters.Add("@organismo", e.Organismo)
@@ -30,12 +30,12 @@ Public Class AsociacionesRepository
         Return ExecuteQuery(queryInsert)
     End Function
 
-    Public Function Delete(id As Object) As Boolean Implements GenericContract(Of Asociaciones).Delete
+    Public Function Delete(id As Object) As Boolean Implements IGenericContract(Of Asociaciones).Delete
         parameters.Add("@id_usuario", id)
         Return ExecuteQuery(queryDelete)
     End Function
 
-    Public Function Update(e As Asociaciones) As Boolean Implements GenericContract(Of Asociaciones).Update
+    Public Function Update(e As Asociaciones) As Boolean Implements IGenericContract(Of Asociaciones).Update
         parameters.Add("@id_usuario", e.IdUsuario)
         parameters.Add("@organismo", e.Organismo)
         parameters.Add("@nombramiento", e.Nombramiento)
@@ -45,7 +45,7 @@ Public Class AsociacionesRepository
         Return ExecuteQuery(queryUpdate)
     End Function
 
-    Public Function SelectAll() As List(Of Asociaciones) Implements GenericContract(Of Asociaciones).SelectAll
+    Public Function SelectAll() As List(Of Asociaciones) Implements IGenericContract(Of Asociaciones).SelectAll
         Dim dataTable = ExecuteSelect(querySelect)
         Dim asociaciones As New List(Of Asociaciones)
 
@@ -70,5 +70,17 @@ Public Class AsociacionesRepository
         Next
 
         Return asociaciones
+    End Function
+
+    Public Function SelectWithId(id As Object) As Asociaciones Implements IGenericContract(Of Asociaciones).SelectWithId
+        Throw New NotImplementedException()
+    End Function
+
+    Public Function SelectAllWithId(id As Object) As List(Of Asociaciones) Implements IGenericContract(Of Asociaciones).SelectAllWithId
+        Throw New NotImplementedException()
+    End Function
+
+    Public Function DeleteSpecific(e As Asociaciones) As Boolean Implements IGenericContract(Of Asociaciones).DeleteSpecific
+        Throw New NotImplementedException()
     End Function
 End Class

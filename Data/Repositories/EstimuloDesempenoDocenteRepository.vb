@@ -2,8 +2,8 @@
 Imports Entities
 
 Public Class EstimuloDesempenoDocenteRepository
-    Inherits MasterRepository
-    Implements GenericContract(Of EstimuloDesempenoDocente)
+    Inherits MasterRepository(Of EstimuloDesempenoDocente)
+    Implements IGenericContract(Of EstimuloDesempenoDocente)
 
     Public Sub New()
         queryInsert = "insert into estimulo_desempeno_docente values (@id_usuario, @anio, @nivel)"
@@ -16,7 +16,7 @@ Public Class EstimuloDesempenoDocenteRepository
         querySelect = "select * from estimulo_desempeno_docente"
     End Sub
 
-    Public Function Insert(e As EstimuloDesempenoDocente) As Boolean Implements GenericContract(Of EstimuloDesempenoDocente).Insert
+    Public Function Insert(e As EstimuloDesempenoDocente) As Boolean Implements IGenericContract(Of EstimuloDesempenoDocente).Insert
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", e.IdUsuario)
         parameters.Add("@anio", e.Anio)
@@ -24,13 +24,13 @@ Public Class EstimuloDesempenoDocenteRepository
         Return ExecuteQuery(queryInsert)
     End Function
 
-    Public Function Delete(id As Object) As Boolean Implements GenericContract(Of EstimuloDesempenoDocente).Delete
+    Public Function Delete(id As Object) As Boolean Implements IGenericContract(Of EstimuloDesempenoDocente).Delete
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", id)
         Return ExecuteQuery(queryDelete)
     End Function
 
-    Public Function Update(e As EstimuloDesempenoDocente) As Boolean Implements GenericContract(Of EstimuloDesempenoDocente).Update
+    Public Function Update(e As EstimuloDesempenoDocente) As Boolean Implements IGenericContract(Of EstimuloDesempenoDocente).Update
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", e.IdUsuario)
         parameters.Add("@anio", e.Anio)
@@ -38,7 +38,7 @@ Public Class EstimuloDesempenoDocenteRepository
         Return ExecuteQuery(queryUpdate)
     End Function
 
-    Public Function SelectAll() As List(Of EstimuloDesempenoDocente) Implements GenericContract(Of EstimuloDesempenoDocente).SelectAll
+    Public Function SelectAll() As List(Of EstimuloDesempenoDocente) Implements IGenericContract(Of EstimuloDesempenoDocente).SelectAll
         Dim dataTable = ExecuteSelect(querySelect)
         Dim estimuloDesempenoDocente As New List(Of EstimuloDesempenoDocente)
 
@@ -57,5 +57,17 @@ Public Class EstimuloDesempenoDocenteRepository
         Next
 
         Return estimuloDesempenoDocente
+    End Function
+
+    Public Function SelectWithId(id As Object) As EstimuloDesempenoDocente Implements IGenericContract(Of EstimuloDesempenoDocente).SelectWithId
+        Throw New NotImplementedException()
+    End Function
+
+    Public Function SelectAllWithId(id As Object) As List(Of EstimuloDesempenoDocente) Implements IGenericContract(Of EstimuloDesempenoDocente).SelectAllWithId
+        Throw New NotImplementedException()
+    End Function
+
+    Public Function DeleteSpecific(e As EstimuloDesempenoDocente) As Boolean Implements IGenericContract(Of EstimuloDesempenoDocente).DeleteSpecific
+        Throw New NotImplementedException()
     End Function
 End Class

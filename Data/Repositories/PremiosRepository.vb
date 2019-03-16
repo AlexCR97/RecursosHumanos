@@ -2,8 +2,8 @@
 Imports Entities
 
 Public Class PremiosRepository
-    Inherits MasterRepository
-    Implements GenericContract(Of Premios)
+    Inherits MasterRepository(Of Premios)
+    Implements IGenericContract(Of Premios)
 
     Public Sub New()
         queryInsert = "insert into premios values (@id_usuario, @id_institucion, @descripcion, @fecha_certificacion)"
@@ -17,7 +17,7 @@ Public Class PremiosRepository
         querySelect = "select * from premios"
     End Sub
 
-    Public Function Insert(e As Premios) As Boolean Implements GenericContract(Of Premios).Insert
+    Public Function Insert(e As Premios) As Boolean Implements IGenericContract(Of Premios).Insert
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", e.IdUsuario)
         parameters.Add("@id_institucion", e.IdInstitucion)
@@ -26,13 +26,13 @@ Public Class PremiosRepository
         Return ExecuteQuery(queryInsert)
     End Function
 
-    Public Function Delete(id As Object) As Boolean Implements GenericContract(Of Premios).Delete
+    Public Function Delete(id As Object) As Boolean Implements IGenericContract(Of Premios).Delete
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", id)
         Return ExecuteQuery(queryDelete)
     End Function
 
-    Public Function Update(e As Premios) As Boolean Implements GenericContract(Of Premios).Update
+    Public Function Update(e As Premios) As Boolean Implements IGenericContract(Of Premios).Update
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", e.IdUsuario)
         parameters.Add("@id_institucion", e.IdInstitucion)
@@ -41,7 +41,7 @@ Public Class PremiosRepository
         Return ExecuteQuery(queryUpdate)
     End Function
 
-    Public Function SelectAll() As List(Of Premios) Implements GenericContract(Of Premios).SelectAll
+    Public Function SelectAll() As List(Of Premios) Implements IGenericContract(Of Premios).SelectAll
         Dim dataTable = ExecuteSelect(querySelect)
         Dim premios As New List(Of Premios)
 
@@ -62,5 +62,17 @@ Public Class PremiosRepository
         Next
 
         Return premios
+    End Function
+
+    Public Function SelectWithId(id As Object) As Premios Implements IGenericContract(Of Premios).SelectWithId
+        Throw New NotImplementedException()
+    End Function
+
+    Public Function SelectAllWithId(id As Object) As List(Of Premios) Implements IGenericContract(Of Premios).SelectAllWithId
+        Throw New NotImplementedException()
+    End Function
+
+    Public Function DeleteSpecific(e As Premios) As Boolean Implements IGenericContract(Of Premios).DeleteSpecific
+        Throw New NotImplementedException()
     End Function
 End Class

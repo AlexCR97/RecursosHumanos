@@ -1,7 +1,7 @@
 ﻿Public Class OtrosMediosDeContacto
 
-    Public IdUsuario As String
-    Public Medio As String
-    Public Descripcion As String
+    Public Property IdUsuario As String
+    Public Property Medio As String
+    Public Property Descripcion As String
 
 End Class

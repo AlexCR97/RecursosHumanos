@@ -2,8 +2,8 @@
 Imports Entities
 
 Public Class ColegiosRepository
-    Inherits MasterRepository
-    Implements GenericContract(Of Colegios)
+    Inherits MasterRepository(Of Colegios)
+    Implements IGenericContract(Of Colegios)
 
     Public Sub New()
         queryInsert = "insert into colegios values (@id_usuario, @nombramiento, @colegio, @afiliacion)"
@@ -17,7 +17,7 @@ Public Class ColegiosRepository
         querySelect = "select * from colegios"
     End Sub
 
-    Public Function Insert(e As Colegios) As Boolean Implements GenericContract(Of Colegios).Insert
+    Public Function Insert(e As Colegios) As Boolean Implements IGenericContract(Of Colegios).Insert
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", e.IdUsuario)
         parameters.Add("@nombramiento", e.Nombramiento)
@@ -26,13 +26,13 @@ Public Class ColegiosRepository
         Return ExecuteQuery(queryInsert)
     End Function
 
-    Public Function Delete(id As Object) As Boolean Implements GenericContract(Of Colegios).Delete
+    Public Function Delete(id As Object) As Boolean Implements IGenericContract(Of Colegios).Delete
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", id)
         Return ExecuteQuery(queryDelete)
     End Function
 
-    Public Function Update(e As Colegios) As Boolean Implements GenericContract(Of Colegios).Update
+    Public Function Update(e As Colegios) As Boolean Implements IGenericContract(Of Colegios).Update
         parameters = New Dictionary(Of String, Object)
         parameters.Add("@id_usuario", e.IdUsuario)
         parameters.Add("@nombramiento", e.Nombramiento)
@@ -41,7 +41,7 @@ Public Class ColegiosRepository
         Return ExecuteQuery(queryUpdate)
     End Function
 
-    Public Function SelectAll() As List(Of Colegios) Implements GenericContract(Of Colegios).SelectAll
+    Public Function SelectAll() As List(Of Colegios) Implements IGenericContract(Of Colegios).SelectAll
         Dim dataTable = ExecuteSelect(querySelect)
         Dim colegios As New List(Of Colegios)
 
@@ -62,5 +62,17 @@ Public Class ColegiosRepository
         Next
 
         Return colegios
+    End Function
+
+    Public Function SelectWithId(id As Object) As Colegios Implements IGenericContract(Of Colegios).SelectWithId
+        Throw New NotImplementedException()
+    End Function
+
+    Public Function SelectAllWithId(id As Object) As List(Of Colegios) Implements IGenericContract(Of Colegios).SelectAllWithId
+        Throw New NotImplementedException()
+    End Function
+
+    Public Function DeleteSpecific(e As Colegios) As Boolean Implements IGenericContract(Of Colegios).DeleteSpecific
+        Throw New NotImplementedException()
     End Function
 End Class
