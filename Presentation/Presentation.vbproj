@@ -115,6 +115,18 @@
     <Compile Include="Dialogues\CustomDialog.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Dialogues\DatosGenerales\AdscripcionesExternasDialog.Designer.vb">
+      <DependentUpon>AdscripcionesExternasDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\DatosGenerales\AdscripcionesExternasDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogues\DatosGenerales\AdscripcionesTecNMDialog.Designer.vb">
+      <DependentUpon>AdscripcionesTecNMDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\DatosGenerales\AdscripcionesTecNMDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dialogues\DatosGenerales\CorreosDialog.Designer.vb">
       <DependentUpon>CorreosDialog.vb</DependentUpon>
     </Compile>
@@ -279,6 +291,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogues\CustomDialog.resx">
       <DependentUpon>CustomDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\DatosGenerales\AdscripcionesExternasDialog.resx">
+      <DependentUpon>AdscripcionesExternasDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\DatosGenerales\AdscripcionesTecNMDialog.resx">
+      <DependentUpon>AdscripcionesTecNMDialog.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogues\DatosGenerales\CorreosDialog.resx">
       <DependentUpon>CorreosDialog.vb</DependentUpon>

@@ -1,9 +1,9 @@
 ﻿Public Class AdscripcionExterna
 
-    Public IdUsuario As String
-    Public IdInstitucion As Integer
-    Public Puesto As String
-    Public FechaNombramiento As DateTime
-    Public Vigente As Boolean
+    Public Property IdUsuario As String
+    Public Property Institucion As String
+    Public Property Puesto As String
+    Public Property FechaNombramiento As DateTime
+    Public Property Vigente As Boolean
 
 End Class

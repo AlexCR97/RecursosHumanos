@@ -5,7 +5,7 @@ Public Class AdscripcionExternaModel
     Inherits Model(Of AdscripcionExterna)
 
     Public Entity As AdscripcionExterna
-    Private repository = New AdscripcionExternaRepository()
+    Private repository As AdscripcionExternaRepository = New AdscripcionExternaRepository()
 
     Public Sub New()
 
@@ -25,6 +25,9 @@ Public Class AdscripcionExternaModel
 
             Case STATE_UPDATE
                 Return repository.Update(Entity)
+
+            Case STATE_DELETE_SPECIFIC
+                Return repository.DeleteSpecific(Entity)
         End Select
 
         Return False
@@ -39,6 +42,6 @@ Public Class AdscripcionExternaModel
     End Function
 
     Public Overrides Function GetEntitiesWithId() As List(Of AdscripcionExterna)
-        Throw New NotImplementedException()
+        Return repository.SelectAllWithId(Entity.IdUsuario)
     End Function
 End Class

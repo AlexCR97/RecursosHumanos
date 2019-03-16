@@ -1,8 +1,8 @@
 ﻿Public Class AdscripcionTecNM
 
-    Public IdUsuario As String
-    Public Plantel As String
-    Public FechaAdscripcion As DateTime
-    Public Vigente As Boolean
+    Public Property IdUsuario As String
+    Public Property Plantel As String
+    Public Property FechaAdscripcion As DateTime
+    Public Property Vigente As Boolean
 
 End Class
