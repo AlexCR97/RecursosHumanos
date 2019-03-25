@@ -77,44 +77,47 @@ Partial Class DatosGeneralesModule
         '
         'ButtonPerfilYCuenta
         '
+        Me.ButtonPerfilYCuenta.BackColor = System.Drawing.Color.SteelBlue
         Me.ButtonPerfilYCuenta.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ButtonPerfilYCuenta.Font = New System.Drawing.Font("Corbel", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonPerfilYCuenta.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.ButtonPerfilYCuenta.Location = New System.Drawing.Point(123, 3)
         Me.ButtonPerfilYCuenta.Name = "ButtonPerfilYCuenta"
         Me.ButtonPerfilYCuenta.Size = New System.Drawing.Size(418, 114)
         Me.ButtonPerfilYCuenta.TabIndex = 0
         Me.ButtonPerfilYCuenta.Text = "Perfil y cuenta"
-        Me.ButtonPerfilYCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ButtonPerfilYCuenta.UseVisualStyleBackColor = True
+        Me.ButtonPerfilYCuenta.UseVisualStyleBackColor = False
         '
         'ButtonDatosDeContacto
         '
+        Me.ButtonDatosDeContacto.BackColor = System.Drawing.Color.SteelBlue
         Me.ButtonDatosDeContacto.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ButtonDatosDeContacto.Font = New System.Drawing.Font("Corbel", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonDatosDeContacto.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.ButtonDatosDeContacto.Location = New System.Drawing.Point(123, 123)
         Me.ButtonDatosDeContacto.Name = "ButtonDatosDeContacto"
         Me.ButtonDatosDeContacto.Size = New System.Drawing.Size(418, 114)
         Me.ButtonDatosDeContacto.TabIndex = 1
         Me.ButtonDatosDeContacto.Text = "Datos de contacto"
-        Me.ButtonDatosDeContacto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ButtonDatosDeContacto.UseVisualStyleBackColor = True
+        Me.ButtonDatosDeContacto.UseVisualStyleBackColor = False
         '
         'ButtonDatosLaborales
         '
+        Me.ButtonDatosLaborales.BackColor = System.Drawing.Color.SteelBlue
         Me.ButtonDatosLaborales.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ButtonDatosLaborales.Font = New System.Drawing.Font("Corbel", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonDatosLaborales.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.ButtonDatosLaborales.Location = New System.Drawing.Point(123, 243)
         Me.ButtonDatosLaborales.Name = "ButtonDatosLaborales"
         Me.ButtonDatosLaborales.Size = New System.Drawing.Size(418, 114)
         Me.ButtonDatosLaborales.TabIndex = 2
         Me.ButtonDatosLaborales.Text = "Datos laborales"
-        Me.ButtonDatosLaborales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ButtonDatosLaborales.UseVisualStyleBackColor = True
+        Me.ButtonDatosLaborales.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Image = Global.Presentation.My.Resources.Resources.iconCorreo
+        Me.PictureBox1.Image = Global.Presentation.My.Resources.Resources.iconUserBlack
         Me.PictureBox1.Location = New System.Drawing.Point(3, 3)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(114, 114)
@@ -125,7 +128,7 @@ Partial Class DatosGeneralesModule
         'PictureBox2
         '
         Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox2.Image = Global.Presentation.My.Resources.Resources.iconUser
+        Me.PictureBox2.Image = Global.Presentation.My.Resources.Resources.iconContactBlack
         Me.PictureBox2.Location = New System.Drawing.Point(3, 123)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(114, 114)
@@ -136,7 +139,7 @@ Partial Class DatosGeneralesModule
         'PictureBox3
         '
         Me.PictureBox3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox3.Image = Global.Presentation.My.Resources.Resources.iconUser
+        Me.PictureBox3.Image = Global.Presentation.My.Resources.Resources.iconWorkBlack
         Me.PictureBox3.Location = New System.Drawing.Point(3, 243)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(114, 114)
@@ -148,7 +151,7 @@ Partial Class DatosGeneralesModule
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Transparent
+        Me.BackColor = System.Drawing.Color.GhostWhite
         Me.Controls.Add(Me.TableLayoutPanelContent)
         Me.Name = "DatosGeneralesModule"
         Me.Size = New System.Drawing.Size(861, 511)

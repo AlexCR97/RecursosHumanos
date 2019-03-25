@@ -43,7 +43,7 @@ Partial Class OtrosMediosDialog
         'LabelTitle
         '
         Me.LabelTitle.Size = New System.Drawing.Size(554, 68)
-        Me.LabelTitle.Text = "Otros medios de contacto"
+        Me.LabelTitle.Text = "Otro medio de contacto"
         '
         'TableLayoutPanel1
         '
@@ -160,7 +160,7 @@ Partial Class OtrosMediosDialog
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(554, 221)
         Me.Name = "OtrosMediosDialog"
-        Me.Text = "OtrosMediosDialog"
+        Me.Text = ""
         Me.PanelContent.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()

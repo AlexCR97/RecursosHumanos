@@ -10,16 +10,12 @@ Public Class MainForm
     Public Const TITLE_DATOS_GENERALES_PERFIL_Y_CUENTA = "Perfil y cuenta"
     Public Const TITLE_DATOS_GENERALES_DATOS_DE_CONTACTO = "Datos de contacto"
     Public Const TITLE_DATOS_GENERALES_DATOS_LABORALES = "Datos laborales"
-
     Public Const TITLE_PERFIL_ACADEMICO = "Perfil academico"
     Public Const TITLE_PERFIL_ACADEMICO_TITULOS_ACADEMICOS = "Titulos academicos"
     Public Const TITLE_PERFIL_ACADEMICO_PRODUCTIVDAD_ACADEMICA = "Productividad academica"
     Public Const TITLE_PERFIL_ACADEMICO_DISTINCIONES = "Distinciones"
     Public Const TITLE_PERFIL_ACADEMICO_ASOCIACIONES = "Asociaciones"
-
-    Public Const TITLE_APLICACIONES = "Aplicaciones"
-    Public Const TITLE_APLICACIONES_VINCULADAS = "Aplicaciones vinculadas"
-    Public Const TITLE_APLICACIONES_MENSAJES = "Mensajes de aplicacion"
+    Public Const TITLE_RESUMEN = "Resumen"
 
     Private modules As Dictionary(Of String, Control) = New Dictionary(Of String, Control)
 
@@ -32,8 +28,12 @@ Public Class MainForm
     Public Sub New()
         InitializeComponent()
 
+        Dim resumen = New ResumenModule(Me)
+        Me.LoadModule(resumen)
+
         Me.MainMenuModule1.SetMainForm(Me)
         Me.SideBarModule1.SetMainForm(Me)
+        Me.MenuBarModule1.SetMainForm(Me)
     End Sub
 
     Public Sub InitializeWithUser(usuario As Usuario)
@@ -61,6 +61,12 @@ Public Class MainForm
 
     Public Sub SetContentTitle(Title As String)
         Me.LabelSubContentTitle.Text = Title
+    End Sub
+
+    Public Sub UpdateResumenModule()
+        Dim resumen As ResumenModule = CType(modules("ResumenModule"), ResumenModule)
+        resumen.ClearData()
+        resumen.FillData()
     End Sub
 
 End Class

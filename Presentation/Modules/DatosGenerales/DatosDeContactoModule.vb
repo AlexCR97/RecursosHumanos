@@ -29,6 +29,7 @@ Public Class DatosDeContactoModule
         Dim telefonos As List(Of Telefonos) = telefonosModel.GetEntitiesWithId()
 
         Me.DataGridViewTelefonos.DataSource = telefonos
+        mainForm.UpdateResumenModule()
     End Sub
 
     Public Sub FillCorreosData()
@@ -41,6 +42,7 @@ Public Class DatosDeContactoModule
         Dim correos As List(Of Correos) = correosModel.GetEntitiesWithId()
 
         Me.DataGridViewCorreos.DataSource = correos
+        mainForm.UpdateResumenModule()
     End Sub
 
     Public Sub FillOtrosData()
@@ -53,6 +55,7 @@ Public Class DatosDeContactoModule
         Dim otrosMedios As List(Of OtrosMediosDeContacto) = otrosMediosModel.GetEntitiesWithId()
 
         Me.DataGridViewOtrosMedios.DataSource = otrosMedios
+        mainForm.UpdateResumenModule()
     End Sub
 
     Private Sub AgregarButtonTelefonos_Click(sender As Object, e As EventArgs) Handles AgregarButtonTelefonos.Click

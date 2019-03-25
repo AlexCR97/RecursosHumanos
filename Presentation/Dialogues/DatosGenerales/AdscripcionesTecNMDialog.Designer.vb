@@ -45,6 +45,7 @@ Partial Class AdscripcionesTecNMDialog
         'LabelTitle
         '
         Me.LabelTitle.Size = New System.Drawing.Size(554, 68)
+        Me.LabelTitle.Text = "Adscripcion TecNM"
         '
         'TableLayoutPanel1
         '
@@ -186,7 +187,7 @@ Partial Class AdscripcionesTecNMDialog
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(554, 258)
         Me.Name = "AdscripcionesTecNMDialog"
-        Me.Text = "AdscripcionesTecNMDialog"
+        Me.Text = ""
         Me.PanelContent.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()

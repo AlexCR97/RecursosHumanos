@@ -1,9 +1,9 @@
 ﻿Public Class Estancias
 
-    Public IdUsuario As String
-    Public IdInstitucion As Integer
-    Public NombreProyecto As String
-    Public FechaInicio As DateTime
-    Public FechaTermino As DateTime
+    Public Property IdUsuario As String
+    Public Property Institucion As String
+    Public Property NombreProyecto As String
+    Public Property FechaInicio As DateTime
+    Public Property FechaTermino As DateTime
 
 End Class

@@ -28,8 +28,7 @@ Public Class DatosLaboralesModule
         Dim adscripciones As List(Of AdscripcionTecNM) = tecnmModel.GetEntitiesWithId()
 
         Me.DataGridViewTECNM.DataSource = adscripciones
-
-        Console.WriteLine("Successfully filled data with tecnm list: " + adscripciones.Count.ToString)
+        mainForm.UpdateResumenModule()
     End Sub
 
     Public Sub FillExternasData()
@@ -42,8 +41,7 @@ Public Class DatosLaboralesModule
         Dim adscripciones As List(Of AdscripcionExterna) = externasModel.GetEntitiesWithId()
 
         Me.DataGridViewExternas.DataSource = adscripciones
-
-        Console.WriteLine("Successfully filled data with externas list: " + adscripciones.Count.ToString)
+        mainForm.UpdateResumenModule()
     End Sub
 
     Private Sub AgregarButtonTECNM_Click(sender As Object, e As EventArgs) Handles AgregarButtonTECNM.Click

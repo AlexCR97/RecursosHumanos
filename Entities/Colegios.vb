@@ -1,8 +1,8 @@
 ﻿Public Class Colegios
 
-    Public IdUsuario As String
-    Public Nombramiento As String
-    Public Colegio As String
-    Public Afiliacion As String
+    Public Property IdUsuario As String
+    Public Property Nombramiento As String
+    Public Property Colegio As String
+    Public Property Afiliacion As String
 
 End Class

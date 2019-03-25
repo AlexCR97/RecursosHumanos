@@ -24,19 +24,16 @@ Partial Class SideBarModule
     Private Sub InitializeComponent()
         Me.ButtonDatosGenerales = New System.Windows.Forms.Button()
         Me.ButtonPerfilAcademico = New System.Windows.Forms.Button()
-        Me.ButtonAplicaciones = New System.Windows.Forms.Button()
         Me.ButtonResumen = New System.Windows.Forms.Button()
         Me.TableLayoutPanelButtons = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBoxExpandOrShrink = New System.Windows.Forms.PictureBox()
         Me.PictureBoxDatosGenerales = New System.Windows.Forms.PictureBox()
         Me.PictureBoxPerfilAcademico = New System.Windows.Forms.PictureBox()
-        Me.PictureBoxAplicaciones = New System.Windows.Forms.PictureBox()
         Me.PictureBoxResumen = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanelButtons.SuspendLayout()
         CType(Me.PictureBoxExpandOrShrink, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxDatosGenerales, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxPerfilAcademico, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBoxAplicaciones, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxResumen, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -44,6 +41,7 @@ Partial Class SideBarModule
         '
         Me.ButtonDatosGenerales.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ButtonDatosGenerales.FlatAppearance.BorderSize = 0
+        Me.ButtonDatosGenerales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue
         Me.ButtonDatosGenerales.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonDatosGenerales.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonDatosGenerales.ForeColor = System.Drawing.SystemColors.ControlLight
@@ -59,6 +57,7 @@ Partial Class SideBarModule
         '
         Me.ButtonPerfilAcademico.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ButtonPerfilAcademico.FlatAppearance.BorderSize = 0
+        Me.ButtonPerfilAcademico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue
         Me.ButtonPerfilAcademico.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonPerfilAcademico.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonPerfilAcademico.ForeColor = System.Drawing.SystemColors.ControlLight
@@ -70,29 +69,15 @@ Partial Class SideBarModule
         Me.ButtonPerfilAcademico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ButtonPerfilAcademico.UseVisualStyleBackColor = True
         '
-        'ButtonAplicaciones
-        '
-        Me.ButtonAplicaciones.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ButtonAplicaciones.FlatAppearance.BorderSize = 0
-        Me.ButtonAplicaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonAplicaciones.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonAplicaciones.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.ButtonAplicaciones.Location = New System.Drawing.Point(73, 183)
-        Me.ButtonAplicaciones.Name = "ButtonAplicaciones"
-        Me.ButtonAplicaciones.Size = New System.Drawing.Size(134, 54)
-        Me.ButtonAplicaciones.TabIndex = 2
-        Me.ButtonAplicaciones.Text = "Aplicaciones"
-        Me.ButtonAplicaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ButtonAplicaciones.UseVisualStyleBackColor = True
-        '
         'ButtonResumen
         '
         Me.ButtonResumen.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ButtonResumen.FlatAppearance.BorderSize = 0
+        Me.ButtonResumen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue
         Me.ButtonResumen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonResumen.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonResumen.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.ButtonResumen.Location = New System.Drawing.Point(73, 243)
+        Me.ButtonResumen.Location = New System.Drawing.Point(73, 183)
         Me.ButtonResumen.Name = "ButtonResumen"
         Me.ButtonResumen.Size = New System.Drawing.Size(134, 54)
         Me.ButtonResumen.TabIndex = 3
@@ -112,22 +97,20 @@ Partial Class SideBarModule
         Me.TableLayoutPanelButtons.Controls.Add(Me.PictureBoxExpandOrShrink, 1, 0)
         Me.TableLayoutPanelButtons.Controls.Add(Me.PictureBoxDatosGenerales, 1, 1)
         Me.TableLayoutPanelButtons.Controls.Add(Me.PictureBoxPerfilAcademico, 1, 2)
-        Me.TableLayoutPanelButtons.Controls.Add(Me.PictureBoxAplicaciones, 1, 3)
-        Me.TableLayoutPanelButtons.Controls.Add(Me.ButtonResumen, 3, 4)
-        Me.TableLayoutPanelButtons.Controls.Add(Me.ButtonAplicaciones, 3, 3)
+        Me.TableLayoutPanelButtons.Controls.Add(Me.ButtonResumen, 3, 3)
         Me.TableLayoutPanelButtons.Controls.Add(Me.ButtonPerfilAcademico, 3, 2)
         Me.TableLayoutPanelButtons.Controls.Add(Me.ButtonDatosGenerales, 3, 1)
-        Me.TableLayoutPanelButtons.Controls.Add(Me.PictureBoxResumen, 1, 4)
+        Me.TableLayoutPanelButtons.Controls.Add(Me.PictureBoxResumen, 1, 3)
         Me.TableLayoutPanelButtons.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanelButtons.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanelButtons.Name = "TableLayoutPanelButtons"
-        Me.TableLayoutPanelButtons.RowCount = 6
-        Me.TableLayoutPanelButtons.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60.0!))
+        Me.TableLayoutPanelButtons.RowCount = 5
         Me.TableLayoutPanelButtons.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60.0!))
         Me.TableLayoutPanelButtons.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60.0!))
         Me.TableLayoutPanelButtons.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60.0!))
         Me.TableLayoutPanelButtons.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60.0!))
         Me.TableLayoutPanelButtons.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanelButtons.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanelButtons.Size = New System.Drawing.Size(220, 644)
         Me.TableLayoutPanelButtons.TabIndex = 4
         '
@@ -156,7 +139,7 @@ Partial Class SideBarModule
         'PictureBoxPerfilAcademico
         '
         Me.PictureBoxPerfilAcademico.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBoxPerfilAcademico.Image = Global.Presentation.My.Resources.Resources.iconUser
+        Me.PictureBoxPerfilAcademico.Image = Global.Presentation.My.Resources.Resources.iconEdit
         Me.PictureBoxPerfilAcademico.Location = New System.Drawing.Point(13, 123)
         Me.PictureBoxPerfilAcademico.Name = "PictureBoxPerfilAcademico"
         Me.PictureBoxPerfilAcademico.Size = New System.Drawing.Size(44, 54)
@@ -164,22 +147,11 @@ Partial Class SideBarModule
         Me.PictureBoxPerfilAcademico.TabIndex = 6
         Me.PictureBoxPerfilAcademico.TabStop = False
         '
-        'PictureBoxAplicaciones
-        '
-        Me.PictureBoxAplicaciones.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBoxAplicaciones.Image = Global.Presentation.My.Resources.Resources.iconUser
-        Me.PictureBoxAplicaciones.Location = New System.Drawing.Point(13, 183)
-        Me.PictureBoxAplicaciones.Name = "PictureBoxAplicaciones"
-        Me.PictureBoxAplicaciones.Size = New System.Drawing.Size(44, 54)
-        Me.PictureBoxAplicaciones.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBoxAplicaciones.TabIndex = 7
-        Me.PictureBoxAplicaciones.TabStop = False
-        '
         'PictureBoxResumen
         '
         Me.PictureBoxResumen.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBoxResumen.Image = Global.Presentation.My.Resources.Resources.iconUser
-        Me.PictureBoxResumen.Location = New System.Drawing.Point(13, 243)
+        Me.PictureBoxResumen.Image = Global.Presentation.My.Resources.Resources.iconResume
+        Me.PictureBoxResumen.Location = New System.Drawing.Point(13, 183)
         Me.PictureBoxResumen.Name = "PictureBoxResumen"
         Me.PictureBoxResumen.Size = New System.Drawing.Size(44, 54)
         Me.PictureBoxResumen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -198,7 +170,6 @@ Partial Class SideBarModule
         CType(Me.PictureBoxExpandOrShrink, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBoxDatosGenerales, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBoxPerfilAcademico, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBoxAplicaciones, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBoxResumen, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -206,12 +177,10 @@ Partial Class SideBarModule
 
     Friend WithEvents ButtonDatosGenerales As Button
     Friend WithEvents ButtonPerfilAcademico As Button
-    Friend WithEvents ButtonAplicaciones As Button
     Friend WithEvents ButtonResumen As Button
     Friend WithEvents TableLayoutPanelButtons As TableLayoutPanel
     Friend WithEvents PictureBoxExpandOrShrink As PictureBox
     Friend WithEvents PictureBoxDatosGenerales As PictureBox
     Friend WithEvents PictureBoxPerfilAcademico As PictureBox
-    Friend WithEvents PictureBoxAplicaciones As PictureBox
     Friend WithEvents PictureBoxResumen As PictureBox
 End Class

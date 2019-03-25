@@ -25,68 +25,19 @@ Partial Class TitulosAcademicosModule
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.CustomDataGridViewTitulosAcademicos = New Presentation.CustomDataGridView()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
-        Me.AgregarButtonTitulosAcademicos = New Presentation.AgregarButton()
-        Me.EditarButtonTitulosAcademicos = New Presentation.EditarButton()
         Me.EliminarButtonTitulosAcademicos = New Presentation.EliminarButton()
+        Me.EditarButtonTitulosAcademicos = New Presentation.EditarButton()
+        Me.AgregarButtonTitulosAcademicos = New Presentation.AgregarButton()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TableLayoutPanelContent = New System.Windows.Forms.TableLayoutPanel()
-        Me.Institucion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Grado = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Titulo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaObtencion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NumeroCedula = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.CustomDataGridViewTitulosAcademicos, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.DataGridViewTitulosAcademicos = New System.Windows.Forms.DataGridView()
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanelContent.SuspendLayout()
+        CType(Me.DataGridViewTitulosAcademicos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'CustomDataGridViewTitulosAcademicos
-        '
-        Me.CustomDataGridViewTitulosAcademicos.AllowUserToAddRows = False
-        Me.CustomDataGridViewTitulosAcademicos.AllowUserToDeleteRows = False
-        Me.CustomDataGridViewTitulosAcademicos.AllowUserToResizeColumns = False
-        Me.CustomDataGridViewTitulosAcademicos.AllowUserToResizeRows = False
-        Me.CustomDataGridViewTitulosAcademicos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.CustomDataGridViewTitulosAcademicos.BackgroundColor = System.Drawing.Color.LightSteelBlue
-        Me.CustomDataGridViewTitulosAcademicos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.MidnightBlue
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlLight
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.CustomDataGridViewTitulosAcademicos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.CustomDataGridViewTitulosAcademicos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.CustomDataGridViewTitulosAcademicos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Institucion, Me.Grado, Me.Titulo, Me.FechaObtencion, Me.NumeroCedula})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Transparent
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.CustomDataGridViewTitulosAcademicos.DefaultCellStyle = DataGridViewCellStyle2
-        Me.CustomDataGridViewTitulosAcademicos.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CustomDataGridViewTitulosAcademicos.Location = New System.Drawing.Point(53, 53)
-        Me.CustomDataGridViewTitulosAcademicos.MultiSelect = False
-        Me.CustomDataGridViewTitulosAcademicos.Name = "CustomDataGridViewTitulosAcademicos"
-        Me.CustomDataGridViewTitulosAcademicos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.MidnightBlue
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlLight
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.CustomDataGridViewTitulosAcademicos.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
-        Me.CustomDataGridViewTitulosAcademicos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.CustomDataGridViewTitulosAcademicos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.CustomDataGridViewTitulosAcademicos.Size = New System.Drawing.Size(757, 568)
-        Me.CustomDataGridViewTitulosAcademicos.TabIndex = 9
         '
         'FlowLayoutPanel2
         '
@@ -100,18 +51,18 @@ Partial Class TitulosAcademicosModule
         Me.FlowLayoutPanel2.Size = New System.Drawing.Size(757, 34)
         Me.FlowLayoutPanel2.TabIndex = 6
         '
-        'AgregarButtonTitulosAcademicos
+        'EliminarButtonTitulosAcademicos
         '
-        Me.AgregarButtonTitulosAcademicos.BackColor = System.Drawing.Color.SteelBlue
-        Me.AgregarButtonTitulosAcademicos.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AgregarButtonTitulosAcademicos.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.AgregarButtonTitulosAcademicos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.AgregarButtonTitulosAcademicos.Location = New System.Drawing.Point(517, 3)
-        Me.AgregarButtonTitulosAcademicos.Name = "AgregarButtonTitulosAcademicos"
-        Me.AgregarButtonTitulosAcademicos.Size = New System.Drawing.Size(75, 30)
-        Me.AgregarButtonTitulosAcademicos.TabIndex = 2
-        Me.AgregarButtonTitulosAcademicos.Text = "Agregar"
-        Me.AgregarButtonTitulosAcademicos.UseVisualStyleBackColor = False
+        Me.EliminarButtonTitulosAcademicos.BackColor = System.Drawing.Color.Firebrick
+        Me.EliminarButtonTitulosAcademicos.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EliminarButtonTitulosAcademicos.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.EliminarButtonTitulosAcademicos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.EliminarButtonTitulosAcademicos.Location = New System.Drawing.Point(679, 3)
+        Me.EliminarButtonTitulosAcademicos.Name = "EliminarButtonTitulosAcademicos"
+        Me.EliminarButtonTitulosAcademicos.Size = New System.Drawing.Size(75, 30)
+        Me.EliminarButtonTitulosAcademicos.TabIndex = 0
+        Me.EliminarButtonTitulosAcademicos.Text = "Eliminar"
+        Me.EliminarButtonTitulosAcademicos.UseVisualStyleBackColor = False
         '
         'EditarButtonTitulosAcademicos
         '
@@ -126,18 +77,18 @@ Partial Class TitulosAcademicosModule
         Me.EditarButtonTitulosAcademicos.Text = "Editar"
         Me.EditarButtonTitulosAcademicos.UseVisualStyleBackColor = False
         '
-        'EliminarButtonTitulosAcademicos
+        'AgregarButtonTitulosAcademicos
         '
-        Me.EliminarButtonTitulosAcademicos.BackColor = System.Drawing.Color.Firebrick
-        Me.EliminarButtonTitulosAcademicos.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EliminarButtonTitulosAcademicos.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.EliminarButtonTitulosAcademicos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.EliminarButtonTitulosAcademicos.Location = New System.Drawing.Point(679, 3)
-        Me.EliminarButtonTitulosAcademicos.Name = "EliminarButtonTitulosAcademicos"
-        Me.EliminarButtonTitulosAcademicos.Size = New System.Drawing.Size(75, 30)
-        Me.EliminarButtonTitulosAcademicos.TabIndex = 0
-        Me.EliminarButtonTitulosAcademicos.Text = "Eliminar"
-        Me.EliminarButtonTitulosAcademicos.UseVisualStyleBackColor = False
+        Me.AgregarButtonTitulosAcademicos.BackColor = System.Drawing.Color.SteelBlue
+        Me.AgregarButtonTitulosAcademicos.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AgregarButtonTitulosAcademicos.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.AgregarButtonTitulosAcademicos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.AgregarButtonTitulosAcademicos.Location = New System.Drawing.Point(517, 3)
+        Me.AgregarButtonTitulosAcademicos.Name = "AgregarButtonTitulosAcademicos"
+        Me.AgregarButtonTitulosAcademicos.Size = New System.Drawing.Size(75, 30)
+        Me.AgregarButtonTitulosAcademicos.TabIndex = 2
+        Me.AgregarButtonTitulosAcademicos.Text = "Agregar"
+        Me.AgregarButtonTitulosAcademicos.UseVisualStyleBackColor = False
         '
         'Panel1
         '
@@ -168,7 +119,7 @@ Partial Class TitulosAcademicosModule
         Me.TableLayoutPanelContent.Controls.Add(Me.Label1, 1, 0)
         Me.TableLayoutPanelContent.Controls.Add(Me.Panel1, 1, 1)
         Me.TableLayoutPanelContent.Controls.Add(Me.FlowLayoutPanel2, 1, 3)
-        Me.TableLayoutPanelContent.Controls.Add(Me.CustomDataGridViewTitulosAcademicos, 1, 2)
+        Me.TableLayoutPanelContent.Controls.Add(Me.DataGridViewTitulosAcademicos, 1, 2)
         Me.TableLayoutPanelContent.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanelContent.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanelContent.Name = "TableLayoutPanelContent"
@@ -190,30 +141,52 @@ Partial Class TitulosAcademicosModule
         Me.TableLayoutPanelContent.Size = New System.Drawing.Size(863, 664)
         Me.TableLayoutPanelContent.TabIndex = 1
         '
-        'Institucion
+        'DataGridViewTitulosAcademicos
         '
-        Me.Institucion.HeaderText = "Institucion"
-        Me.Institucion.Name = "Institucion"
-        '
-        'Grado
-        '
-        Me.Grado.HeaderText = "Grado"
-        Me.Grado.Name = "Grado"
-        '
-        'Titulo
-        '
-        Me.Titulo.HeaderText = "Titulo"
-        Me.Titulo.Name = "Titulo"
-        '
-        'FechaObtencion
-        '
-        Me.FechaObtencion.HeaderText = "Fecha de obtencion"
-        Me.FechaObtencion.Name = "FechaObtencion"
-        '
-        'NumeroCedula
-        '
-        Me.NumeroCedula.HeaderText = "Numero de cedula"
-        Me.NumeroCedula.Name = "NumeroCedula"
+        Me.DataGridViewTitulosAcademicos.AllowUserToAddRows = False
+        Me.DataGridViewTitulosAcademicos.AllowUserToDeleteRows = False
+        Me.DataGridViewTitulosAcademicos.AllowUserToOrderColumns = True
+        Me.DataGridViewTitulosAcademicos.AllowUserToResizeColumns = False
+        Me.DataGridViewTitulosAcademicos.AllowUserToResizeRows = False
+        Me.DataGridViewTitulosAcademicos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridViewTitulosAcademicos.BackgroundColor = System.Drawing.Color.LightSteelBlue
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.MidnightBlue
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlLight
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTitulosAcademicos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.DataGridViewTitulosAcademicos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.AliceBlue
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridViewTitulosAcademicos.DefaultCellStyle = DataGridViewCellStyle2
+        Me.DataGridViewTitulosAcademicos.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridViewTitulosAcademicos.Location = New System.Drawing.Point(53, 53)
+        Me.DataGridViewTitulosAcademicos.MultiSelect = False
+        Me.DataGridViewTitulosAcademicos.Name = "DataGridViewTitulosAcademicos"
+        Me.DataGridViewTitulosAcademicos.ReadOnly = True
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.MidnightBlue
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlLight
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTitulosAcademicos.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.DataGridViewTitulosAcademicos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.AliceBlue
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewTitulosAcademicos.RowsDefaultCellStyle = DataGridViewCellStyle4
+        Me.DataGridViewTitulosAcademicos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridViewTitulosAcademicos.Size = New System.Drawing.Size(757, 568)
+        Me.DataGridViewTitulosAcademicos.TabIndex = 12
         '
         'TitulosAcademicosModule
         '
@@ -222,14 +195,12 @@ Partial Class TitulosAcademicosModule
         Me.Controls.Add(Me.TableLayoutPanelContent)
         Me.Name = "TitulosAcademicosModule"
         Me.Size = New System.Drawing.Size(863, 664)
-        CType(Me.CustomDataGridViewTitulosAcademicos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.FlowLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanelContent.ResumeLayout(False)
+        CType(Me.DataGridViewTitulosAcademicos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents CustomDataGridViewTitulosAcademicos As CustomDataGridView
     Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
     Friend WithEvents EliminarButtonTitulosAcademicos As EliminarButton
     Friend WithEvents EditarButtonTitulosAcademicos As EditarButton
@@ -237,9 +208,5 @@ Partial Class TitulosAcademicosModule
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents TableLayoutPanelContent As TableLayoutPanel
-    Friend WithEvents Institucion As DataGridViewTextBoxColumn
-    Friend WithEvents Grado As DataGridViewTextBoxColumn
-    Friend WithEvents Titulo As DataGridViewTextBoxColumn
-    Friend WithEvents FechaObtencion As DataGridViewTextBoxColumn
-    Friend WithEvents NumeroCedula As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTitulosAcademicos As DataGridView
 End Class

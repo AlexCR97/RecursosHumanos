@@ -41,7 +41,7 @@ Partial Class TelefonosDialog
         'LabelTitle
         '
         Me.LabelTitle.Size = New System.Drawing.Size(554, 68)
-        Me.LabelTitle.Text = "Agregar telefono"
+        Me.LabelTitle.Text = "Telefono"
         '
         'TableLayoutPanel1
         '
@@ -129,7 +129,7 @@ Partial Class TelefonosDialog
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(554, 186)
         Me.Name = "TelefonosDialog"
-        Me.Text = "TelefonosDialog"
+        Me.Text = ""
         Me.PanelContent.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()

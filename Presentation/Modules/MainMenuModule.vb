@@ -9,20 +9,19 @@
     Private Sub ButtonDatosGenerales_Click(sender As Object, e As EventArgs) Handles ButtonDatosGenerales.Click
         Dim m = New DatosGeneralesModule(mainForm)
         mainForm.LoadModule(m)
+        mainForm.SetContentTitle(MainForm.TITLE_DATOS_GENERALES)
     End Sub
 
     Private Sub ButtonPerfilAcademico_Click(sender As Object, e As EventArgs) Handles ButtonPerfilAcademico.Click
         Dim m = New PerfilAcademicoModule(mainForm)
         mainForm.LoadModule(m)
-    End Sub
-
-    Private Sub ButtonAplicaciones_Click(sender As Object, e As EventArgs) Handles ButtonAplicaciones.Click
-        Dim m = New AplicacionesModule(mainForm)
-        mainForm.LoadModule(m)
+        mainForm.SetContentTitle(MainForm.TITLE_PERFIL_ACADEMICO)
     End Sub
 
     Private Sub ButtonResumen_Click(sender As Object, e As EventArgs) Handles ButtonResumen.Click
-
+        Dim m = New ResumenModule(mainForm)
+        mainForm.LoadModule(m)
+        mainForm.SetContentTitle(MainForm.TITLE_RESUMEN)
     End Sub
 
 End Class

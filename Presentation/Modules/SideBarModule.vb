@@ -50,24 +50,16 @@
         mainForm.SetContentTitle(MainForm.TITLE_PERFIL_ACADEMICO)
     End Sub
 
-    Private Sub ButtonAplicaciones_Click(sender As Object, e As EventArgs) Handles ButtonAplicaciones.Click
-        Dim m = New AplicacionesModule(mainForm)
-        mainForm.LoadModule(m)
-        mainForm.SetContentTitle(MainForm.TITLE_APLICACIONES)
-    End Sub
-
-    Private Sub PictureBoxAplicaciones_Click(sender As Object, e As EventArgs) Handles PictureBoxAplicaciones.Click
-        Dim m = New AplicacionesModule(mainForm)
-        mainForm.LoadModule(m)
-        mainForm.SetContentTitle(MainForm.TITLE_APLICACIONES)
-    End Sub
-
     Private Sub ButtonResumen_Click(sender As Object, e As EventArgs) Handles ButtonResumen.Click
-
+        Dim m = New ResumenModule(mainForm)
+        mainForm.LoadModule(m)
+        mainForm.SetContentTitle(MainForm.TITLE_RESUMEN)
     End Sub
 
     Private Sub PictureBoxResumen_Click(sender As Object, e As EventArgs) Handles PictureBoxResumen.Click
-
+        Dim m = New ResumenModule(mainForm)
+        mainForm.LoadModule(m)
+        mainForm.SetContentTitle(MainForm.TITLE_RESUMEN)
     End Sub
 
 End Class

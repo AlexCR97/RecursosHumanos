@@ -30,7 +30,7 @@ Public Class PerfilYCuentaDialog
         Me.TextBoxApellidoM.Text = datosPersonales.ApellidoMaterno
         Me.ComboBoxSexo.SelectedItem = datosPersonales.Sexo
         Me.ComboBoxPaisNacimiento.SelectedItem = datosPersonales.PaisNacimiento
-        Me.DateTimePickerFechaNacimiento.Value = datosPersonales.FechaNacimiento
+        Me.DateTimePickerFechaNacimiento.Value = If(datosPersonales.FechaNacimiento > DateTime.Parse("1/1/1753"), datosPersonales.FechaNacimiento, DateTime.Parse("1/1/1753"))
         Me.TextBoxCurp.Text = datosPersonales.Curp
         Me.TextBoxRfc.Text = datosPersonales.Rfc
         Me.TextBoxCvu.Text = datosPersonales.Cvu

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class AsociacionesModule
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,11 +20,12 @@ Partial Class AsociacionesModule
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TableLayoutPanelContent = New System.Windows.Forms.TableLayoutPanel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -32,11 +33,10 @@ Partial Class AsociacionesModule
         Me.EliminarButtonAsociaciones = New Presentation.EliminarButton()
         Me.EditarButtonAsociaciones = New Presentation.EditarButton()
         Me.AgregarButtonAsociaciones = New Presentation.AgregarButton()
-        Me.CustomDataGridViewAsociaciones = New Presentation.CustomDataGridView()
-        Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewAsociaciones = New System.Windows.Forms.DataGridView()
         Me.TableLayoutPanelContent.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
-        CType(Me.CustomDataGridViewAsociaciones, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridViewAsociaciones, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TableLayoutPanelContent
@@ -48,7 +48,7 @@ Partial Class AsociacionesModule
         Me.TableLayoutPanelContent.Controls.Add(Me.Label1, 1, 0)
         Me.TableLayoutPanelContent.Controls.Add(Me.Panel1, 1, 1)
         Me.TableLayoutPanelContent.Controls.Add(Me.FlowLayoutPanel2, 1, 3)
-        Me.TableLayoutPanelContent.Controls.Add(Me.CustomDataGridViewAsociaciones, 1, 2)
+        Me.TableLayoutPanelContent.Controls.Add(Me.DataGridViewAsociaciones, 1, 2)
         Me.TableLayoutPanelContent.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanelContent.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanelContent.Name = "TableLayoutPanelContent"
@@ -141,55 +141,52 @@ Partial Class AsociacionesModule
         Me.AgregarButtonAsociaciones.Text = "Agregar"
         Me.AgregarButtonAsociaciones.UseVisualStyleBackColor = False
         '
-        'CustomDataGridViewAsociaciones
+        'DataGridViewAsociaciones
         '
-        Me.CustomDataGridViewAsociaciones.AllowUserToAddRows = False
-        Me.CustomDataGridViewAsociaciones.AllowUserToDeleteRows = False
-        Me.CustomDataGridViewAsociaciones.AllowUserToResizeColumns = False
-        Me.CustomDataGridViewAsociaciones.AllowUserToResizeRows = False
-        Me.CustomDataGridViewAsociaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.CustomDataGridViewAsociaciones.BackgroundColor = System.Drawing.Color.LightSteelBlue
-        Me.CustomDataGridViewAsociaciones.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.MidnightBlue
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlLight
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.CustomDataGridViewAsociaciones.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.CustomDataGridViewAsociaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.CustomDataGridViewAsociaciones.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Telefono})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Transparent
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.CustomDataGridViewAsociaciones.DefaultCellStyle = DataGridViewCellStyle2
-        Me.CustomDataGridViewAsociaciones.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CustomDataGridViewAsociaciones.Location = New System.Drawing.Point(53, 53)
-        Me.CustomDataGridViewAsociaciones.MultiSelect = False
-        Me.CustomDataGridViewAsociaciones.Name = "CustomDataGridViewAsociaciones"
-        Me.CustomDataGridViewAsociaciones.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.MidnightBlue
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlLight
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.CustomDataGridViewAsociaciones.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
-        Me.CustomDataGridViewAsociaciones.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.CustomDataGridViewAsociaciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.CustomDataGridViewAsociaciones.Size = New System.Drawing.Size(757, 568)
-        Me.CustomDataGridViewAsociaciones.TabIndex = 9
-        '
-        'Telefono
-        '
-        Me.Telefono.HeaderText = "Telefono"
-        Me.Telefono.Name = "Telefono"
+        Me.DataGridViewAsociaciones.AllowUserToAddRows = False
+        Me.DataGridViewAsociaciones.AllowUserToDeleteRows = False
+        Me.DataGridViewAsociaciones.AllowUserToOrderColumns = True
+        Me.DataGridViewAsociaciones.AllowUserToResizeColumns = False
+        Me.DataGridViewAsociaciones.AllowUserToResizeRows = False
+        Me.DataGridViewAsociaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridViewAsociaciones.BackgroundColor = System.Drawing.Color.LightSteelBlue
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.MidnightBlue
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlLight
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewAsociaciones.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
+        Me.DataGridViewAsociaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.AliceBlue
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridViewAsociaciones.DefaultCellStyle = DataGridViewCellStyle10
+        Me.DataGridViewAsociaciones.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridViewAsociaciones.Location = New System.Drawing.Point(53, 53)
+        Me.DataGridViewAsociaciones.MultiSelect = False
+        Me.DataGridViewAsociaciones.Name = "DataGridViewAsociaciones"
+        Me.DataGridViewAsociaciones.ReadOnly = True
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.Color.MidnightBlue
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlLight
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewAsociaciones.RowHeadersDefaultCellStyle = DataGridViewCellStyle11
+        Me.DataGridViewAsociaciones.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        DataGridViewCellStyle12.BackColor = System.Drawing.Color.AliceBlue
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewAsociaciones.RowsDefaultCellStyle = DataGridViewCellStyle12
+        Me.DataGridViewAsociaciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridViewAsociaciones.Size = New System.Drawing.Size(757, 568)
+        Me.DataGridViewAsociaciones.TabIndex = 15
         '
         'AsociacionesModule
         '
@@ -200,7 +197,7 @@ Partial Class AsociacionesModule
         Me.Size = New System.Drawing.Size(863, 664)
         Me.TableLayoutPanelContent.ResumeLayout(False)
         Me.FlowLayoutPanel2.ResumeLayout(False)
-        CType(Me.CustomDataGridViewAsociaciones, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridViewAsociaciones, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -212,6 +209,5 @@ Partial Class AsociacionesModule
     Friend WithEvents EliminarButtonAsociaciones As EliminarButton
     Friend WithEvents EditarButtonAsociaciones As EditarButton
     Friend WithEvents AgregarButtonAsociaciones As AgregarButton
-    Friend WithEvents CustomDataGridViewAsociaciones As CustomDataGridView
-    Friend WithEvents Telefono As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewAsociaciones As DataGridView
 End Class

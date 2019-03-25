@@ -1,9 +1,9 @@
 ﻿Public Class ProductosDeInvestigacion
 
-    Public IdUsuario As String
-    Public Titulo As String
-    Public Proposito As String
-    Public FechaPublicacion As DateTime
-    Public TipoProducto As String
+    Public Property IdUsuario As String
+    Public Property Titulo As String
+    Public Property Proposito As String
+    Public Property FechaPublicacion As DateTime
+    Public Property TipoProducto As String
 
 End Class

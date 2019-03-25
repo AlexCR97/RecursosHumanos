@@ -5,7 +5,7 @@ Public Class AsociacionesModel
     Inherits Model(Of Asociaciones)
 
     Public Entity As Asociaciones
-    Private repository = New AsociacionesRepository
+    Private repository As AsociacionesRepository = New AsociacionesRepository()
 
     Public Sub New()
 
@@ -25,6 +25,9 @@ Public Class AsociacionesModel
 
             Case STATE_UPDATE
                 Return repository.Update(Entity)
+
+            Case STATE_DELETE_SPECIFIC
+                Return repository.DeleteSpecific(Entity)
         End Select
 
         Return False
@@ -39,6 +42,6 @@ Public Class AsociacionesModel
     End Function
 
     Public Overrides Function GetEntitiesWithId() As List(Of Asociaciones)
-        Throw New NotImplementedException()
+        Return repository.SelectAllWithId(Entity.IdUsuario)
     End Function
 End Class

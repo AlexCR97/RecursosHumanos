@@ -13,25 +13,25 @@
     End Sub
 
     Private Sub ButtonTitulosAcademicos_Click(sender As Object, e As EventArgs) Handles ButtonTitulosAcademicos.Click
-        Dim m = New TitulosAcademicosModule()
+        Dim m = New TitulosAcademicosModule(mainForm)
         mainForm.LoadModule(m)
         mainForm.SetContentTitle(MainForm.TITLE_PERFIL_ACADEMICO_TITULOS_ACADEMICOS)
     End Sub
 
     Private Sub ButtonProductividadAcademica_Click(sender As Object, e As EventArgs) Handles ButtonProductividadAcademica.Click
-        Dim m = New ProductividadAcademicaModule()
+        Dim m = New ProductividadAcademicaModule(mainForm)
         mainForm.LoadModule(m)
         mainForm.SetContentTitle(MainForm.TITLE_PERFIL_ACADEMICO_PRODUCTIVDAD_ACADEMICA)
     End Sub
 
     Private Sub ButtonDistinciones_Click(sender As Object, e As EventArgs) Handles ButtonDistinciones.Click
-        Dim m = New DistincionesModule()
+        Dim m = New DistincionesModule(mainForm)
         mainForm.LoadModule(m)
         mainForm.SetContentTitle(MainForm.TITLE_PERFIL_ACADEMICO_DISTINCIONES)
     End Sub
 
     Private Sub ButtonAsociaciones_Click(sender As Object, e As EventArgs) Handles ButtonAsociaciones.Click
-        Dim m = New AsociacionesModule()
+        Dim m = New AsociacionesModule(mainForm)
         mainForm.LoadModule(m)
         mainForm.SetContentTitle(MainForm.TITLE_PERFIL_ACADEMICO_ASOCIACIONES)
     End Sub

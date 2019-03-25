@@ -25,6 +25,8 @@ Public Class PerfilYCuentaModule
         Me.LabelRfc.Text = datosPersonales.Rfc
         Me.LabelCvu.Text = datosPersonales.Cvu
         Me.LabelBiografia.Text = datosPersonales.Biografia
+
+        mainForm.UpdateResumenModule()
     End Sub
 
     Private Sub PictureBoxEditar_Click(sender As Object, e As EventArgs) Handles PictureBoxEditar.Click

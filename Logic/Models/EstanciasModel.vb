@@ -5,7 +5,7 @@ Public Class EstanciasModel
     Inherits Model(Of Estancias)
 
     Public Entity As Estancias
-    Private repository = New EstanciasRepository
+    Private repository As EstanciasRepository = New EstanciasRepository
 
     Public Sub New()
 
@@ -25,6 +25,9 @@ Public Class EstanciasModel
 
             Case STATE_UPDATE
                 Return repository.Update(Entity)
+
+            Case STATE_DELETE_SPECIFIC
+                Return repository.DeleteSpecific(Entity)
         End Select
 
         Return False
@@ -39,6 +42,6 @@ Public Class EstanciasModel
     End Function
 
     Public Overrides Function GetEntitiesWithId() As List(Of Estancias)
-        Throw New NotImplementedException()
+        Return repository.SelectAllWithId(Entity.IdUsuario)
     End Function
 End Class

@@ -1,10 +1,10 @@
 ﻿Public Class Asociaciones
 
-    Public IdUsuario As String
-    Public Organismo As String
-    Public Nombramiento As String
-    Public AnioAfiliacion As DateTime
-    Public InicioVigencia As DateTime
-    Public FinVigencia As DateTime
+    Public Property IdUsuario As String
+    Public Property Organismo As String
+    Public Property Nombramiento As String
+    Public Property AnioAfiliacion As DateTime
+    Public Property InicioVigencia As DateTime
+    Public Property FinVigencia As DateTime
 
 End Class

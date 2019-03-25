@@ -153,19 +153,22 @@ Partial Class LoginForm
         Me.TextBoxSignInContrasena.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxSignInContrasena.Location = New System.Drawing.Point(53, 42)
         Me.TextBoxSignInContrasena.Name = "TextBoxSignInContrasena"
+        Me.TextBoxSignInContrasena.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxSignInContrasena.Size = New System.Drawing.Size(438, 27)
         Me.TextBoxSignInContrasena.TabIndex = 1
         '
         'ButtonAcceder
         '
+        Me.ButtonAcceder.BackColor = System.Drawing.Color.SteelBlue
         Me.ButtonAcceder.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ButtonAcceder.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonAcceder.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.ButtonAcceder.Location = New System.Drawing.Point(53, 81)
         Me.ButtonAcceder.Name = "ButtonAcceder"
         Me.ButtonAcceder.Size = New System.Drawing.Size(438, 35)
         Me.ButtonAcceder.TabIndex = 2
         Me.ButtonAcceder.Text = "Acceder"
-        Me.ButtonAcceder.UseVisualStyleBackColor = True
+        Me.ButtonAcceder.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -315,6 +318,7 @@ Partial Class LoginForm
         Me.TextBoxSignUpConfirmarContrasena.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextBoxSignUpConfirmarContrasena.Location = New System.Drawing.Point(260, 93)
         Me.TextBoxSignUpConfirmarContrasena.Name = "TextBoxSignUpConfirmarContrasena"
+        Me.TextBoxSignUpConfirmarContrasena.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxSignUpConfirmarContrasena.Size = New System.Drawing.Size(241, 27)
         Me.TextBoxSignUpConfirmarContrasena.TabIndex = 6
         '
@@ -333,6 +337,7 @@ Partial Class LoginForm
         Me.TextBoxSignUpContrasena.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextBoxSignUpContrasena.Location = New System.Drawing.Point(8, 93)
         Me.TextBoxSignUpContrasena.Name = "TextBoxSignUpContrasena"
+        Me.TextBoxSignUpContrasena.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxSignUpContrasena.Size = New System.Drawing.Size(241, 27)
         Me.TextBoxSignUpContrasena.TabIndex = 5
         '
@@ -582,14 +587,16 @@ Partial Class LoginForm
         '
         'ButtonRegistrarse
         '
+        Me.ButtonRegistrarse.BackColor = System.Drawing.Color.SteelBlue
         Me.ButtonRegistrarse.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ButtonRegistrarse.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonRegistrarse.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.ButtonRegistrarse.Location = New System.Drawing.Point(0, 0)
         Me.ButtonRegistrarse.Name = "ButtonRegistrarse"
         Me.ButtonRegistrarse.Size = New System.Drawing.Size(1047, 29)
         Me.ButtonRegistrarse.TabIndex = 0
         Me.ButtonRegistrarse.Text = "Registrarse"
-        Me.ButtonRegistrarse.UseVisualStyleBackColor = True
+        Me.ButtonRegistrarse.UseVisualStyleBackColor = False
         '
         'LoginForm
         '

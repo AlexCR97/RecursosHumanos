@@ -83,44 +83,47 @@ Partial Class PerfilAcademicoModule
         '
         'ButtonTitulosAcademicos
         '
+        Me.ButtonTitulosAcademicos.BackColor = System.Drawing.Color.SteelBlue
         Me.ButtonTitulosAcademicos.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ButtonTitulosAcademicos.Font = New System.Drawing.Font("Corbel", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonTitulosAcademicos.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.ButtonTitulosAcademicos.Location = New System.Drawing.Point(123, 3)
         Me.ButtonTitulosAcademicos.Name = "ButtonTitulosAcademicos"
         Me.ButtonTitulosAcademicos.Size = New System.Drawing.Size(418, 114)
         Me.ButtonTitulosAcademicos.TabIndex = 0
         Me.ButtonTitulosAcademicos.Text = "Titulos academicos"
-        Me.ButtonTitulosAcademicos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ButtonTitulosAcademicos.UseVisualStyleBackColor = True
+        Me.ButtonTitulosAcademicos.UseVisualStyleBackColor = False
         '
         'ButtonProductividadAcademica
         '
+        Me.ButtonProductividadAcademica.BackColor = System.Drawing.Color.SteelBlue
         Me.ButtonProductividadAcademica.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ButtonProductividadAcademica.Font = New System.Drawing.Font("Corbel", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonProductividadAcademica.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.ButtonProductividadAcademica.Location = New System.Drawing.Point(123, 123)
         Me.ButtonProductividadAcademica.Name = "ButtonProductividadAcademica"
         Me.ButtonProductividadAcademica.Size = New System.Drawing.Size(418, 114)
         Me.ButtonProductividadAcademica.TabIndex = 1
         Me.ButtonProductividadAcademica.Text = "Productividad academica"
-        Me.ButtonProductividadAcademica.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ButtonProductividadAcademica.UseVisualStyleBackColor = True
+        Me.ButtonProductividadAcademica.UseVisualStyleBackColor = False
         '
         'ButtonDistinciones
         '
+        Me.ButtonDistinciones.BackColor = System.Drawing.Color.SteelBlue
         Me.ButtonDistinciones.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ButtonDistinciones.Font = New System.Drawing.Font("Corbel", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonDistinciones.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.ButtonDistinciones.Location = New System.Drawing.Point(123, 243)
         Me.ButtonDistinciones.Name = "ButtonDistinciones"
         Me.ButtonDistinciones.Size = New System.Drawing.Size(418, 114)
         Me.ButtonDistinciones.TabIndex = 2
         Me.ButtonDistinciones.Text = "Distinciones"
-        Me.ButtonDistinciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ButtonDistinciones.UseVisualStyleBackColor = True
+        Me.ButtonDistinciones.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Image = Global.Presentation.My.Resources.Resources.iconCorreo
+        Me.PictureBox1.Image = Global.Presentation.My.Resources.Resources.iconEditBlack
         Me.PictureBox1.Location = New System.Drawing.Point(3, 3)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(114, 114)
@@ -131,7 +134,7 @@ Partial Class PerfilAcademicoModule
         'PictureBox2
         '
         Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox2.Image = Global.Presentation.My.Resources.Resources.iconUser
+        Me.PictureBox2.Image = Global.Presentation.My.Resources.Resources.iconProductivityBlack
         Me.PictureBox2.Location = New System.Drawing.Point(3, 123)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(114, 114)
@@ -142,7 +145,7 @@ Partial Class PerfilAcademicoModule
         'PictureBox3
         '
         Me.PictureBox3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox3.Image = Global.Presentation.My.Resources.Resources.iconUser
+        Me.PictureBox3.Image = Global.Presentation.My.Resources.Resources.iconDistinguishesBlack
         Me.PictureBox3.Location = New System.Drawing.Point(3, 243)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(114, 114)
@@ -153,7 +156,7 @@ Partial Class PerfilAcademicoModule
         'PictureBox4
         '
         Me.PictureBox4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox4.Image = Global.Presentation.My.Resources.Resources.iconUser
+        Me.PictureBox4.Image = Global.Presentation.My.Resources.Resources.iconAsosiationBlack
         Me.PictureBox4.Location = New System.Drawing.Point(3, 363)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(114, 114)
@@ -163,21 +166,22 @@ Partial Class PerfilAcademicoModule
         '
         'ButtonAsociaciones
         '
+        Me.ButtonAsociaciones.BackColor = System.Drawing.Color.SteelBlue
         Me.ButtonAsociaciones.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ButtonAsociaciones.Font = New System.Drawing.Font("Corbel", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonAsociaciones.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.ButtonAsociaciones.Location = New System.Drawing.Point(123, 363)
         Me.ButtonAsociaciones.Name = "ButtonAsociaciones"
         Me.ButtonAsociaciones.Size = New System.Drawing.Size(418, 114)
         Me.ButtonAsociaciones.TabIndex = 7
         Me.ButtonAsociaciones.Text = "Asociaciones"
-        Me.ButtonAsociaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ButtonAsociaciones.UseVisualStyleBackColor = True
+        Me.ButtonAsociaciones.UseVisualStyleBackColor = False
         '
         'PerfilAcademicoModule
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Transparent
+        Me.BackColor = System.Drawing.Color.GhostWhite
         Me.Controls.Add(Me.TableLayoutPanelContent)
         Me.Name = "PerfilAcademicoModule"
         Me.Size = New System.Drawing.Size(861, 511)

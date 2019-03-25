@@ -85,12 +85,6 @@
     <Compile Include="CustomControls\CancelarButton.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CustomControls\CustomDataGridView.Designer.vb">
-      <DependentUpon>CustomDataGridView.vb</DependentUpon>
-    </Compile>
-    <Compile Include="CustomControls\CustomDataGridView.vb">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="CustomControls\EditarButton.Designer.vb">
       <DependentUpon>EditarButton.vb</DependentUpon>
     </Compile>
@@ -151,6 +145,48 @@
     <Compile Include="Dialogues\DatosGenerales\TelefonosDialog.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Dialogues\PerfilAcademico\AsociacionesDialog.Designer.vb">
+      <DependentUpon>AsociacionesDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\PerfilAcademico\AsociacionesDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogues\PerfilAcademico\CertificacionesDialog.Designer.vb">
+      <DependentUpon>CertificacionesDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\PerfilAcademico\CertificacionesDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogues\PerfilAcademico\ColegiosDialog.Designer.vb">
+      <DependentUpon>ColegiosDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\PerfilAcademico\ColegiosDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogues\PerfilAcademico\EstanciasDialog.Designer.vb">
+      <DependentUpon>EstanciasDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\PerfilAcademico\EstanciasDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogues\PerfilAcademico\PremiosDialog.Designer.vb">
+      <DependentUpon>PremiosDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\PerfilAcademico\PremiosDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogues\PerfilAcademico\ProductosDeInvestigacionDialog.Designer.vb">
+      <DependentUpon>ProductosDeInvestigacionDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\PerfilAcademico\ProductosDeInvestigacionDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogues\PerfilAcademico\TitulosAcademicosDialog.Designer.vb">
+      <DependentUpon>TitulosAcademicosDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\PerfilAcademico\TitulosAcademicosDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\CustomForm.Designer.vb">
       <DependentUpon>CustomForm.vb</DependentUpon>
     </Compile>
@@ -169,18 +205,6 @@
     <Compile Include="Forms\MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modules\Aplicaciones\AplicacionesModule.Designer.vb">
-      <DependentUpon>AplicacionesModule.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\Aplicaciones\AplicacionesModule.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Modules\Aplicaciones\AplicacionesVinculadasModule.Designer.vb">
-      <DependentUpon>AplicacionesVinculadasModule.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\Aplicaciones\AplicacionesVinculadasModule.vb">
-      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Modules\DatosGenerales\DatosDeContactoModule.Designer.vb">
       <DependentUpon>DatosDeContactoModule.vb</DependentUpon>
@@ -248,6 +272,54 @@
     <Compile Include="Modules\PerfilAcademico\TitulosAcademicosModule.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Modules\Resumen\ResumenDistincionesModule.Designer.vb">
+      <DependentUpon>ResumenDistincionesModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Resumen\ResumenDistincionesModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Resumen\ResumenDatosDeContactoModule.Designer.vb">
+      <DependentUpon>ResumenDatosDeContactoModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Resumen\ResumenDatosDeContactoModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Resumen\ResumenDatosLaboralesModule.Designer.vb">
+      <DependentUpon>ResumenDatosLaboralesModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Resumen\ResumenDatosLaboralesModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Resumen\ResumenAsociacionesModule.Designer.vb">
+      <DependentUpon>ResumenAsociacionesModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Resumen\ResumenAsociacionesModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Resumen\ResumenModule.Designer.vb">
+      <DependentUpon>ResumenModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Resumen\ResumenModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Resumen\ResumenPerfilYCuentaModule.Designer.vb">
+      <DependentUpon>ResumenPerfilYCuentaModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Resumen\ResumenPerfilYCuentaModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Resumen\ResumenProductividadAcademicaModule.Designer.vb">
+      <DependentUpon>ResumenProductividadAcademicaModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Resumen\ResumenProductividadAcademicaModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Resumen\ResumenTitulosAcademicosModule.Designer.vb">
+      <DependentUpon>ResumenTitulosAcademicosModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Resumen\ResumenTitulosAcademicosModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Modules\SideBarModule.Designer.vb">
       <DependentUpon>SideBarModule.vb</DependentUpon>
     </Compile>
@@ -276,9 +348,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\CancelarButton.resx">
       <DependentUpon>CancelarButton.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CustomControls\CustomDataGridView.resx">
-      <DependentUpon>CustomDataGridView.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\EditarButton.resx">
       <DependentUpon>EditarButton.vb</DependentUpon>
@@ -310,6 +379,27 @@
     <EmbeddedResource Include="Dialogues\DatosGenerales\TelefonosDialog.resx">
       <DependentUpon>TelefonosDialog.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\PerfilAcademico\AsociacionesDialog.resx">
+      <DependentUpon>AsociacionesDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\PerfilAcademico\CertificacionesDialog.resx">
+      <DependentUpon>CertificacionesDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\PerfilAcademico\ColegiosDialog.resx">
+      <DependentUpon>ColegiosDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\PerfilAcademico\EstanciasDialog.resx">
+      <DependentUpon>EstanciasDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\PerfilAcademico\PremiosDialog.resx">
+      <DependentUpon>PremiosDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\PerfilAcademico\ProductosDeInvestigacionDialog.resx">
+      <DependentUpon>ProductosDeInvestigacionDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\PerfilAcademico\TitulosAcademicosDialog.resx">
+      <DependentUpon>TitulosAcademicosDialog.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomForm.resx">
       <DependentUpon>CustomForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -318,12 +408,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modules\Aplicaciones\AplicacionesModule.resx">
-      <DependentUpon>AplicacionesModule.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modules\Aplicaciones\AplicacionesVinculadasModule.resx">
-      <DependentUpon>AplicacionesVinculadasModule.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\DatosGenerales\DatosDeContactoModule.resx">
       <DependentUpon>DatosDeContactoModule.vb</DependentUpon>
@@ -358,6 +442,30 @@
     <EmbeddedResource Include="Modules\PerfilAcademico\TitulosAcademicosModule.resx">
       <DependentUpon>TitulosAcademicosModule.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Resumen\ResumenDistincionesModule.resx">
+      <DependentUpon>ResumenDistincionesModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Resumen\ResumenDatosDeContactoModule.resx">
+      <DependentUpon>ResumenDatosDeContactoModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Resumen\ResumenDatosLaboralesModule.resx">
+      <DependentUpon>ResumenDatosLaboralesModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Resumen\ResumenAsociacionesModule.resx">
+      <DependentUpon>ResumenAsociacionesModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Resumen\ResumenModule.resx">
+      <DependentUpon>ResumenModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Resumen\ResumenPerfilYCuentaModule.resx">
+      <DependentUpon>ResumenPerfilYCuentaModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Resumen\ResumenProductividadAcademicaModule.resx">
+      <DependentUpon>ResumenProductividadAcademicaModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Resumen\ResumenTitulosAcademicosModule.resx">
+      <DependentUpon>ResumenTitulosAcademicosModule.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\SideBarModule.resx">
       <DependentUpon>SideBarModule.vb</DependentUpon>
     </EmbeddedResource>
@@ -381,9 +489,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Dialogues\Aplicaciones\" />
-    <Folder Include="Dialogues\PerfilAcademico\" />
-    <Folder Include="Modules\Resumen\" />
+    <None Include="Resources\iconEdit.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entities\Entities.vbproj">
@@ -415,6 +521,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iconEditBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconContactBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconUserBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconWorkBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconAsosiationBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconDistinguishesBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconProductivityBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconResume.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

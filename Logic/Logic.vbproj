@@ -100,10 +100,17 @@
     </Compile>
     <Compile Include="Validations\AdscripcionExternaValidation.vb" />
     <Compile Include="Validations\AdscripcionTecNMValidation.vb" />
+    <Compile Include="Validations\AsociacionesValidation.vb" />
+    <Compile Include="Validations\CertificacionesValidation.vb" />
+    <Compile Include="Validations\ColegiosValidation.vb" />
     <Compile Include="Validations\CorreosValidation.vb" />
     <Compile Include="Validations\DatosPersonalesValidation.vb" />
+    <Compile Include="Validations\EstanciasValidation.vb" />
     <Compile Include="Validations\OtrosMediosDeContactoValidation.vb" />
+    <Compile Include="Validations\PremiosValidation.vb" />
+    <Compile Include="Validations\ProductosDeInvestigacionValidation.vb" />
     <Compile Include="Validations\TelefonosValidation.vb" />
+    <Compile Include="Validations\TitulosAcademicosValidation.vb" />
     <Compile Include="Validations\UsuarioValidation.vb" />
   </ItemGroup>
   <ItemGroup>

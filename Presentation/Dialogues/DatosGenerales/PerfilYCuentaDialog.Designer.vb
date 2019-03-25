@@ -59,7 +59,7 @@ Partial Class PerfilYCuentaDialog
         'LabelTitle
         '
         Me.LabelTitle.Size = New System.Drawing.Size(554, 68)
-        Me.LabelTitle.Text = "Editar perfil y cuenta"
+        Me.LabelTitle.Text = "Perfil personal"
         '
         'TableLayoutPanel1
         '
@@ -356,7 +356,7 @@ Partial Class PerfilYCuentaDialog
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(554, 566)
         Me.Name = "PerfilYCuentaDialog"
-        Me.Text = "PerfilYCuentaDialog"
+        Me.Text = ""
         Me.PanelContent.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()

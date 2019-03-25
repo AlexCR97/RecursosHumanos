@@ -5,7 +5,7 @@ Public Class PremiosModel
     Inherits Model(Of Premios)
 
     Public Entity As Premios
-    Private repository = New PremiosRepository()
+    Private repository As PremiosRepository = New PremiosRepository()
 
     Public Sub New()
 
@@ -25,6 +25,9 @@ Public Class PremiosModel
 
             Case STATE_UPDATE
                 Return repository.Update(Entity)
+
+            Case STATE_DELETE_SPECIFIC
+                Return repository.DeleteSpecific(Entity)
         End Select
 
         Return False
@@ -39,6 +42,6 @@ Public Class PremiosModel
     End Function
 
     Public Overrides Function GetEntitiesWithId() As List(Of Premios)
-        Throw New NotImplementedException()
+        Return repository.SelectAllWithId(Entity.IdUsuario)
     End Function
 End Class

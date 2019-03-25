@@ -5,7 +5,7 @@ Public Class CertificacionesModel
     Inherits Model(Of Certificaciones)
 
     Public Entity As Certificaciones
-    Private repository = New CertificacionesRepository()
+    Private repository As CertificacionesRepository = New CertificacionesRepository()
 
     Public Sub New()
 
@@ -25,6 +25,9 @@ Public Class CertificacionesModel
 
             Case STATE_UPDATE
                 Return repository.Update(Entity)
+
+            Case STATE_DELETE_SPECIFIC
+                Return repository.DeleteSpecific(Entity)
         End Select
 
         Return False
@@ -39,6 +42,6 @@ Public Class CertificacionesModel
     End Function
 
     Public Overrides Function GetEntitiesWithId() As List(Of Certificaciones)
-        Throw New NotImplementedException()
+        Return repository.SelectAllWithId(Entity.IdUsuario)
     End Function
 End Class

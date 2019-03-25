@@ -81,6 +81,7 @@ Partial Class CustomDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "CustomDialog"
+        Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "CustomDialog"
         Me.PanelHeader.ResumeLayout(False)

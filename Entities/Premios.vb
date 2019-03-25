@@ -1,8 +1,8 @@
 ﻿Public Class Premios
 
-    Public IdUsuario As String
-    Public IdInstitucion As Integer
-    Public Descripcion As String
-    Public FechaCertificacion As DateTime
+    Public Property IdUsuario As String
+    Public Property Institucion As String
+    Public Property Descripcion As String
+    Public Property FechaCertificacion As DateTime
 
 End Class

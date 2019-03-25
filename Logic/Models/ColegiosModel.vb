@@ -5,7 +5,7 @@ Public Class ColegiosModel
     Inherits Model(Of Colegios)
 
     Public Entity As Colegios
-    Private repository = New ColegiosRepository()
+    Private repository As ColegiosRepository = New ColegiosRepository()
 
     Public Sub New()
 
@@ -25,6 +25,9 @@ Public Class ColegiosModel
 
             Case STATE_UPDATE
                 Return repository.Update(Entity)
+
+            Case STATE_DELETE_SPECIFIC
+                Return repository.DeleteSpecific(Entity)
         End Select
 
         Return False
@@ -39,6 +42,6 @@ Public Class ColegiosModel
     End Function
 
     Public Overrides Function GetEntitiesWithId() As List(Of Colegios)
-        Throw New NotImplementedException()
+        Return repository.SelectAllWithId(Entity.IdUsuario)
     End Function
 End Class

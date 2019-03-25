@@ -5,7 +5,7 @@ Public Class ProductosDeInvestigacionModel
     Inherits Model(Of ProductosDeInvestigacion)
 
     Public Entity As ProductosDeInvestigacion
-    Private repository = New ProductosDeInvestigacionRepository()
+    Private repository As ProductosDeInvestigacionRepository = New ProductosDeInvestigacionRepository()
 
     Public Sub New()
 
@@ -25,6 +25,9 @@ Public Class ProductosDeInvestigacionModel
 
             Case STATE_UPDATE
                 Return repository.Update(Entity)
+
+            Case STATE_DELETE_SPECIFIC
+                Return repository.DeleteSpecific(Entity)
         End Select
 
         Return False
@@ -39,6 +42,6 @@ Public Class ProductosDeInvestigacionModel
     End Function
 
     Public Overrides Function GetEntitiesWithId() As List(Of ProductosDeInvestigacion)
-        Throw New NotImplementedException()
+        Return repository.SelectAllWithId(Entity.IdUsuario)
     End Function
 End Class

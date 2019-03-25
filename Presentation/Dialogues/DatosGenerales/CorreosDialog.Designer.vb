@@ -41,7 +41,7 @@ Partial Class CorreosDialog
         'LabelTitle
         '
         Me.LabelTitle.Size = New System.Drawing.Size(554, 68)
-        Me.LabelTitle.Text = "Agregar correo"
+        Me.LabelTitle.Text = "Correo"
         '
         'TableLayoutPanel1
         '
@@ -129,7 +129,7 @@ Partial Class CorreosDialog
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(554, 186)
         Me.Name = "CorreosDialog"
-        Me.Text = "CorreosDialog"
+        Me.Text = ""
         Me.PanelContent.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()

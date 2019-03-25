@@ -5,7 +5,7 @@ Public Class TitulosAcademicosModel
     Inherits Model(Of TitulosAcademicos)
 
     Public Entity As TitulosAcademicos
-    Private repository = New TitulosAcademicosRepository()
+    Private repository As TitulosAcademicosRepository = New TitulosAcademicosRepository()
 
     Public Sub New()
 
@@ -25,6 +25,9 @@ Public Class TitulosAcademicosModel
 
             Case STATE_UPDATE
                 Return repository.Update(Entity)
+
+            Case STATE_DELETE_SPECIFIC
+                Return repository.DeleteSpecific(Entity)
         End Select
 
         Return False
@@ -39,6 +42,6 @@ Public Class TitulosAcademicosModel
     End Function
 
     Public Overrides Function GetEntitiesWithId() As List(Of TitulosAcademicos)
-        Throw New NotImplementedException()
+        Return repository.SelectAllWithId(Entity.IdUsuario)
     End Function
 End Class

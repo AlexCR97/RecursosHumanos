@@ -29,10 +29,10 @@ Partial Class AdscripcionesExternasDialog
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBoxInstitucion = New System.Windows.Forms.TextBox()
         Me.TextBoxPuesto = New System.Windows.Forms.TextBox()
-        Me.DateTimePickerFechaNombramiento = New System.Windows.Forms.DateTimePicker()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.CancelarButton1 = New Presentation.CancelarButton()
         Me.GuardarButton1 = New Presentation.GuardarButton()
+        Me.DateTimePickerFechaNombramiento = New System.Windows.Forms.DateTimePicker()
         Me.CheckBoxVigente = New System.Windows.Forms.CheckBox()
         Me.PanelContent.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -47,7 +47,7 @@ Partial Class AdscripcionesExternasDialog
         'LabelTitle
         '
         Me.LabelTitle.Size = New System.Drawing.Size(554, 68)
-        Me.LabelTitle.Text = "Adscripcion externas"
+        Me.LabelTitle.Text = "Adscripcion externa"
         '
         'TableLayoutPanel1
         '
@@ -147,15 +147,6 @@ Partial Class AdscripcionesExternasDialog
         Me.TextBoxPuesto.Size = New System.Drawing.Size(319, 27)
         Me.TextBoxPuesto.TabIndex = 11
         '
-        'DateTimePickerFechaNombramiento
-        '
-        Me.DateTimePickerFechaNombramiento.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DateTimePickerFechaNombramiento.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePickerFechaNombramiento.Location = New System.Drawing.Point(200, 83)
-        Me.DateTimePickerFechaNombramiento.Name = "DateTimePickerFechaNombramiento"
-        Me.DateTimePickerFechaNombramiento.Size = New System.Drawing.Size(319, 27)
-        Me.DateTimePickerFechaNombramiento.TabIndex = 15
-        '
         'FlowLayoutPanel1
         '
         Me.FlowLayoutPanel1.Controls.Add(Me.CancelarButton1)
@@ -193,6 +184,15 @@ Partial Class AdscripcionesExternasDialog
         Me.GuardarButton1.Text = "Guardar"
         Me.GuardarButton1.UseVisualStyleBackColor = False
         '
+        'DateTimePickerFechaNombramiento
+        '
+        Me.DateTimePickerFechaNombramiento.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DateTimePickerFechaNombramiento.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePickerFechaNombramiento.Location = New System.Drawing.Point(200, 83)
+        Me.DateTimePickerFechaNombramiento.Name = "DateTimePickerFechaNombramiento"
+        Me.DateTimePickerFechaNombramiento.Size = New System.Drawing.Size(319, 27)
+        Me.DateTimePickerFechaNombramiento.TabIndex = 15
+        '
         'CheckBoxVigente
         '
         Me.CheckBoxVigente.AutoSize = True
@@ -211,7 +211,7 @@ Partial Class AdscripcionesExternasDialog
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(554, 293)
         Me.Name = "AdscripcionesExternasDialog"
-        Me.Text = "AdscripcionesExternasDialog"
+        Me.Text = ""
         Me.PanelContent.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()

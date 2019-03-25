@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class DistincionesModule
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,17 +20,20 @@ Partial Class DistincionesModule
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle109 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle110 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle111 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle112 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle113 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle114 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle115 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle116 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle117 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle118 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle119 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle120 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TableLayoutPanelContent = New System.Windows.Forms.TableLayoutPanel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -50,26 +53,16 @@ Partial Class DistincionesModule
         Me.EliminarButtonColegios = New Presentation.EliminarButton()
         Me.EditarButtonColegios = New Presentation.EditarButton()
         Me.AgregarButtonColegios = New Presentation.AgregarButton()
-        Me.CustomDataGridViewCertificaciones = New Presentation.CustomDataGridView()
-        Me.CustomDataGridViewPremios = New Presentation.CustomDataGridView()
-        Me.CustomDataGridViewColegios = New Presentation.CustomDataGridView()
-        Me.Institucion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DescripcionCertificacion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaCertificacion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaLimite = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.InstitucionPremios = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DescripcionPremios = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaCertificacionPremios = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombramiento = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Colegio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Afiliacion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewCertificaciones = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewPremios = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewColegios = New System.Windows.Forms.DataGridView()
         Me.TableLayoutPanelContent.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.FlowLayoutPanel3.SuspendLayout()
         Me.FlowLayoutPanel4.SuspendLayout()
-        CType(Me.CustomDataGridViewCertificaciones, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CustomDataGridViewPremios, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CustomDataGridViewColegios, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridViewCertificaciones, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridViewPremios, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridViewColegios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TableLayoutPanelContent
@@ -87,9 +80,9 @@ Partial Class DistincionesModule
         Me.TableLayoutPanelContent.Controls.Add(Me.FlowLayoutPanel2, 1, 3)
         Me.TableLayoutPanelContent.Controls.Add(Me.FlowLayoutPanel3, 1, 8)
         Me.TableLayoutPanelContent.Controls.Add(Me.FlowLayoutPanel4, 1, 13)
-        Me.TableLayoutPanelContent.Controls.Add(Me.CustomDataGridViewCertificaciones, 1, 2)
-        Me.TableLayoutPanelContent.Controls.Add(Me.CustomDataGridViewPremios, 1, 7)
-        Me.TableLayoutPanelContent.Controls.Add(Me.CustomDataGridViewColegios, 1, 12)
+        Me.TableLayoutPanelContent.Controls.Add(Me.DataGridViewCertificaciones, 1, 2)
+        Me.TableLayoutPanelContent.Controls.Add(Me.DataGridViewPremios, 1, 7)
+        Me.TableLayoutPanelContent.Controls.Add(Me.DataGridViewColegios, 1, 12)
         Me.TableLayoutPanelContent.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanelContent.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanelContent.Name = "TableLayoutPanelContent"
@@ -108,6 +101,7 @@ Partial Class DistincionesModule
         Me.TableLayoutPanelContent.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10.0!))
         Me.TableLayoutPanelContent.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanelContent.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40.0!))
+        Me.TableLayoutPanelContent.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanelContent.Size = New System.Drawing.Size(863, 664)
         Me.TableLayoutPanelContent.TabIndex = 1
         '
@@ -324,190 +318,146 @@ Partial Class DistincionesModule
         Me.AgregarButtonColegios.Text = "Agregar"
         Me.AgregarButtonColegios.UseVisualStyleBackColor = False
         '
-        'CustomDataGridViewCertificaciones
+        'DataGridViewCertificaciones
         '
-        Me.CustomDataGridViewCertificaciones.AllowUserToAddRows = False
-        Me.CustomDataGridViewCertificaciones.AllowUserToDeleteRows = False
-        Me.CustomDataGridViewCertificaciones.AllowUserToResizeColumns = False
-        Me.CustomDataGridViewCertificaciones.AllowUserToResizeRows = False
-        Me.CustomDataGridViewCertificaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.CustomDataGridViewCertificaciones.BackgroundColor = System.Drawing.Color.LightSteelBlue
-        Me.CustomDataGridViewCertificaciones.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.MidnightBlue
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlLight
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.CustomDataGridViewCertificaciones.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.CustomDataGridViewCertificaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.CustomDataGridViewCertificaciones.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Institucion, Me.DescripcionCertificacion, Me.FechaCertificacion, Me.FechaLimite})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Transparent
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.CustomDataGridViewCertificaciones.DefaultCellStyle = DataGridViewCellStyle2
-        Me.CustomDataGridViewCertificaciones.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CustomDataGridViewCertificaciones.Location = New System.Drawing.Point(53, 53)
-        Me.CustomDataGridViewCertificaciones.MultiSelect = False
-        Me.CustomDataGridViewCertificaciones.Name = "CustomDataGridViewCertificaciones"
-        Me.CustomDataGridViewCertificaciones.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.MidnightBlue
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlLight
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.CustomDataGridViewCertificaciones.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
-        Me.CustomDataGridViewCertificaciones.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.CustomDataGridViewCertificaciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.CustomDataGridViewCertificaciones.Size = New System.Drawing.Size(757, 118)
-        Me.CustomDataGridViewCertificaciones.TabIndex = 9
+        Me.DataGridViewCertificaciones.AllowUserToAddRows = False
+        Me.DataGridViewCertificaciones.AllowUserToDeleteRows = False
+        Me.DataGridViewCertificaciones.AllowUserToOrderColumns = True
+        Me.DataGridViewCertificaciones.AllowUserToResizeColumns = False
+        Me.DataGridViewCertificaciones.AllowUserToResizeRows = False
+        Me.DataGridViewCertificaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridViewCertificaciones.BackgroundColor = System.Drawing.Color.LightSteelBlue
+        DataGridViewCellStyle109.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle109.BackColor = System.Drawing.Color.MidnightBlue
+        DataGridViewCellStyle109.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle109.ForeColor = System.Drawing.SystemColors.ControlLight
+        DataGridViewCellStyle109.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle109.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle109.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewCertificaciones.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle109
+        Me.DataGridViewCertificaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle110.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle110.BackColor = System.Drawing.Color.AliceBlue
+        DataGridViewCellStyle110.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle110.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle110.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle110.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle110.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridViewCertificaciones.DefaultCellStyle = DataGridViewCellStyle110
+        Me.DataGridViewCertificaciones.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridViewCertificaciones.Location = New System.Drawing.Point(53, 53)
+        Me.DataGridViewCertificaciones.MultiSelect = False
+        Me.DataGridViewCertificaciones.Name = "DataGridViewCertificaciones"
+        Me.DataGridViewCertificaciones.ReadOnly = True
+        DataGridViewCellStyle111.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle111.BackColor = System.Drawing.Color.MidnightBlue
+        DataGridViewCellStyle111.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle111.ForeColor = System.Drawing.SystemColors.ControlLight
+        DataGridViewCellStyle111.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle111.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle111.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewCertificaciones.RowHeadersDefaultCellStyle = DataGridViewCellStyle111
+        Me.DataGridViewCertificaciones.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        DataGridViewCellStyle112.BackColor = System.Drawing.Color.AliceBlue
+        DataGridViewCellStyle112.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewCertificaciones.RowsDefaultCellStyle = DataGridViewCellStyle112
+        Me.DataGridViewCertificaciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridViewCertificaciones.Size = New System.Drawing.Size(757, 118)
+        Me.DataGridViewCertificaciones.TabIndex = 14
         '
-        'CustomDataGridViewPremios
+        'DataGridViewPremios
         '
-        Me.CustomDataGridViewPremios.AllowUserToAddRows = False
-        Me.CustomDataGridViewPremios.AllowUserToDeleteRows = False
-        Me.CustomDataGridViewPremios.AllowUserToResizeColumns = False
-        Me.CustomDataGridViewPremios.AllowUserToResizeRows = False
-        Me.CustomDataGridViewPremios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.CustomDataGridViewPremios.BackgroundColor = System.Drawing.Color.LightSteelBlue
-        Me.CustomDataGridViewPremios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.MidnightBlue
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlLight
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.CustomDataGridViewPremios.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
-        Me.CustomDataGridViewPremios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.CustomDataGridViewPremios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.InstitucionPremios, Me.DescripcionPremios, Me.FechaCertificacionPremios})
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.Transparent
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.CustomDataGridViewPremios.DefaultCellStyle = DataGridViewCellStyle5
-        Me.CustomDataGridViewPremios.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CustomDataGridViewPremios.Location = New System.Drawing.Point(53, 277)
-        Me.CustomDataGridViewPremios.MultiSelect = False
-        Me.CustomDataGridViewPremios.Name = "CustomDataGridViewPremios"
-        Me.CustomDataGridViewPremios.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.MidnightBlue
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlLight
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.CustomDataGridViewPremios.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
-        Me.CustomDataGridViewPremios.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.CustomDataGridViewPremios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.CustomDataGridViewPremios.Size = New System.Drawing.Size(757, 118)
-        Me.CustomDataGridViewPremios.TabIndex = 10
+        Me.DataGridViewPremios.AllowUserToAddRows = False
+        Me.DataGridViewPremios.AllowUserToDeleteRows = False
+        Me.DataGridViewPremios.AllowUserToOrderColumns = True
+        Me.DataGridViewPremios.AllowUserToResizeColumns = False
+        Me.DataGridViewPremios.AllowUserToResizeRows = False
+        Me.DataGridViewPremios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridViewPremios.BackgroundColor = System.Drawing.Color.LightSteelBlue
+        DataGridViewCellStyle113.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle113.BackColor = System.Drawing.Color.MidnightBlue
+        DataGridViewCellStyle113.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle113.ForeColor = System.Drawing.SystemColors.ControlLight
+        DataGridViewCellStyle113.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle113.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle113.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewPremios.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle113
+        Me.DataGridViewPremios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle114.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle114.BackColor = System.Drawing.Color.AliceBlue
+        DataGridViewCellStyle114.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle114.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle114.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle114.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle114.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridViewPremios.DefaultCellStyle = DataGridViewCellStyle114
+        Me.DataGridViewPremios.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridViewPremios.Location = New System.Drawing.Point(53, 277)
+        Me.DataGridViewPremios.MultiSelect = False
+        Me.DataGridViewPremios.Name = "DataGridViewPremios"
+        Me.DataGridViewPremios.ReadOnly = True
+        DataGridViewCellStyle115.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle115.BackColor = System.Drawing.Color.MidnightBlue
+        DataGridViewCellStyle115.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle115.ForeColor = System.Drawing.SystemColors.ControlLight
+        DataGridViewCellStyle115.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle115.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle115.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewPremios.RowHeadersDefaultCellStyle = DataGridViewCellStyle115
+        Me.DataGridViewPremios.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        DataGridViewCellStyle116.BackColor = System.Drawing.Color.AliceBlue
+        DataGridViewCellStyle116.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewPremios.RowsDefaultCellStyle = DataGridViewCellStyle116
+        Me.DataGridViewPremios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridViewPremios.Size = New System.Drawing.Size(757, 118)
+        Me.DataGridViewPremios.TabIndex = 15
         '
-        'CustomDataGridViewColegios
+        'DataGridViewColegios
         '
-        Me.CustomDataGridViewColegios.AllowUserToAddRows = False
-        Me.CustomDataGridViewColegios.AllowUserToDeleteRows = False
-        Me.CustomDataGridViewColegios.AllowUserToResizeColumns = False
-        Me.CustomDataGridViewColegios.AllowUserToResizeRows = False
-        Me.CustomDataGridViewColegios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.CustomDataGridViewColegios.BackgroundColor = System.Drawing.Color.LightSteelBlue
-        Me.CustomDataGridViewColegios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.MidnightBlue
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlLight
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.CustomDataGridViewColegios.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
-        Me.CustomDataGridViewColegios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.CustomDataGridViewColegios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Nombramiento, Me.Colegio, Me.Afiliacion})
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.Transparent
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.CustomDataGridViewColegios.DefaultCellStyle = DataGridViewCellStyle8
-        Me.CustomDataGridViewColegios.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CustomDataGridViewColegios.Location = New System.Drawing.Point(53, 501)
-        Me.CustomDataGridViewColegios.MultiSelect = False
-        Me.CustomDataGridViewColegios.Name = "CustomDataGridViewColegios"
-        Me.CustomDataGridViewColegios.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.MidnightBlue
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlLight
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.CustomDataGridViewColegios.RowHeadersDefaultCellStyle = DataGridViewCellStyle9
-        Me.CustomDataGridViewColegios.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.CustomDataGridViewColegios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.CustomDataGridViewColegios.Size = New System.Drawing.Size(757, 118)
-        Me.CustomDataGridViewColegios.TabIndex = 0
-        '
-        'Institucion
-        '
-        Me.Institucion.HeaderText = "Institucion"
-        Me.Institucion.Name = "Institucion"
-        '
-        'DescripcionCertificacion
-        '
-        Me.DescripcionCertificacion.HeaderText = "Descripcion"
-        Me.DescripcionCertificacion.Name = "DescripcionCertificacion"
-        '
-        'FechaCertificacion
-        '
-        Me.FechaCertificacion.HeaderText = "Fecha de certificacion"
-        Me.FechaCertificacion.Name = "FechaCertificacion"
-        '
-        'FechaLimite
-        '
-        Me.FechaLimite.HeaderText = "Fecha limite"
-        Me.FechaLimite.Name = "FechaLimite"
-        '
-        'InstitucionPremios
-        '
-        Me.InstitucionPremios.HeaderText = "Institucion"
-        Me.InstitucionPremios.Name = "InstitucionPremios"
-        '
-        'DescripcionPremios
-        '
-        Me.DescripcionPremios.HeaderText = "Descripcion"
-        Me.DescripcionPremios.Name = "DescripcionPremios"
-        '
-        'FechaCertificacionPremios
-        '
-        Me.FechaCertificacionPremios.HeaderText = "Fecha de certificacion"
-        Me.FechaCertificacionPremios.Name = "FechaCertificacionPremios"
-        '
-        'Nombramiento
-        '
-        Me.Nombramiento.HeaderText = "Nombramiento"
-        Me.Nombramiento.Name = "Nombramiento"
-        '
-        'Colegio
-        '
-        Me.Colegio.HeaderText = "Colegio"
-        Me.Colegio.Name = "Colegio"
-        '
-        'Afiliacion
-        '
-        Me.Afiliacion.HeaderText = "Afiliacion"
-        Me.Afiliacion.Name = "Afiliacion"
+        Me.DataGridViewColegios.AllowUserToAddRows = False
+        Me.DataGridViewColegios.AllowUserToDeleteRows = False
+        Me.DataGridViewColegios.AllowUserToOrderColumns = True
+        Me.DataGridViewColegios.AllowUserToResizeColumns = False
+        Me.DataGridViewColegios.AllowUserToResizeRows = False
+        Me.DataGridViewColegios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridViewColegios.BackgroundColor = System.Drawing.Color.LightSteelBlue
+        DataGridViewCellStyle117.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle117.BackColor = System.Drawing.Color.MidnightBlue
+        DataGridViewCellStyle117.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle117.ForeColor = System.Drawing.SystemColors.ControlLight
+        DataGridViewCellStyle117.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle117.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle117.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewColegios.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle117
+        Me.DataGridViewColegios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle118.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle118.BackColor = System.Drawing.Color.AliceBlue
+        DataGridViewCellStyle118.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle118.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle118.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle118.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle118.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridViewColegios.DefaultCellStyle = DataGridViewCellStyle118
+        Me.DataGridViewColegios.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridViewColegios.Location = New System.Drawing.Point(53, 501)
+        Me.DataGridViewColegios.MultiSelect = False
+        Me.DataGridViewColegios.Name = "DataGridViewColegios"
+        Me.DataGridViewColegios.ReadOnly = True
+        DataGridViewCellStyle119.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle119.BackColor = System.Drawing.Color.MidnightBlue
+        DataGridViewCellStyle119.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle119.ForeColor = System.Drawing.SystemColors.ControlLight
+        DataGridViewCellStyle119.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle119.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle119.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewColegios.RowHeadersDefaultCellStyle = DataGridViewCellStyle119
+        Me.DataGridViewColegios.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        DataGridViewCellStyle120.BackColor = System.Drawing.Color.AliceBlue
+        DataGridViewCellStyle120.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewColegios.RowsDefaultCellStyle = DataGridViewCellStyle120
+        Me.DataGridViewColegios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridViewColegios.Size = New System.Drawing.Size(757, 118)
+        Me.DataGridViewColegios.TabIndex = 16
         '
         'DistincionesModule
         '
@@ -520,9 +470,9 @@ Partial Class DistincionesModule
         Me.FlowLayoutPanel2.ResumeLayout(False)
         Me.FlowLayoutPanel3.ResumeLayout(False)
         Me.FlowLayoutPanel4.ResumeLayout(False)
-        CType(Me.CustomDataGridViewCertificaciones, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CustomDataGridViewPremios, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CustomDataGridViewColegios, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridViewCertificaciones, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridViewPremios, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridViewColegios, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -546,17 +496,7 @@ Partial Class DistincionesModule
     Friend WithEvents EliminarButtonColegios As EliminarButton
     Friend WithEvents EditarButtonColegios As EditarButton
     Friend WithEvents AgregarButtonColegios As AgregarButton
-    Friend WithEvents CustomDataGridViewCertificaciones As CustomDataGridView
-    Friend WithEvents CustomDataGridViewPremios As CustomDataGridView
-    Friend WithEvents CustomDataGridViewColegios As CustomDataGridView
-    Friend WithEvents Institucion As DataGridViewTextBoxColumn
-    Friend WithEvents DescripcionCertificacion As DataGridViewTextBoxColumn
-    Friend WithEvents FechaCertificacion As DataGridViewTextBoxColumn
-    Friend WithEvents FechaLimite As DataGridViewTextBoxColumn
-    Friend WithEvents InstitucionPremios As DataGridViewTextBoxColumn
-    Friend WithEvents DescripcionPremios As DataGridViewTextBoxColumn
-    Friend WithEvents FechaCertificacionPremios As DataGridViewTextBoxColumn
-    Friend WithEvents Nombramiento As DataGridViewTextBoxColumn
-    Friend WithEvents Colegio As DataGridViewTextBoxColumn
-    Friend WithEvents Afiliacion As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewCertificaciones As DataGridView
+    Friend WithEvents DataGridViewPremios As DataGridView
+    Friend WithEvents DataGridViewColegios As DataGridView
 End Class

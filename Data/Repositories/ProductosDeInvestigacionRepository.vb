@@ -8,14 +8,21 @@ Public Class ProductosDeInvestigacionRepository
     Public Sub New()
         queryInsert = "insert into productos_de_investigacion values (@id_usuario, @titulo, @proposito, @fecha_publicacion, @tipo_producto)"
         queryDelete = "delete from productos_de_investigacion where id_usuario = @id_usuario"
+        queryDeleteSpecific = "delete from productos_de_investigacion where 
+            id_usuario = @id_usuario and 
+            titulo = @titulo and 
+            proposito = @proposito and 
+            fecha_de_publicacion = @fecha_publicacion and 
+            tipo_de_producto = @tipo_producto"
         queryUpdate = "update productos_de_investigacion set 
             id_usuario = @id_usuario,
             titulo = @titulo,
             proposito = @proposito,
-            fecha_publicacion = @fecha_publicacion,
-            tipo_producto = @tipo_producto
+            fecha_de_publicacion = @fecha_publicacion,
+            tipo_de_producto = @tipo_producto
             where id_usuario = @id_usuario"
         querySelect = "select * from productos_de_investigacion"
+        querySelectAllId = "select * from productos_de_investigacion where id_usuario = @id_usuario"
     End Sub
 
     Public Function Insert(e As ProductosDeInvestigacion) As Boolean Implements IGenericContract(Of ProductosDeInvestigacion).Insert
@@ -45,6 +52,8 @@ Public Class ProductosDeInvestigacionRepository
     End Function
 
     Public Function SelectAll() As List(Of ProductosDeInvestigacion) Implements IGenericContract(Of ProductosDeInvestigacion).SelectAll
+        parameters = New Dictionary(Of String, Object)
+
         Dim dataTable = ExecuteSelect(querySelect)
         Dim productosDeInvestigacion As New List(Of ProductosDeInvestigacion)
 
@@ -52,8 +61,8 @@ Public Class ProductosDeInvestigacionRepository
             Dim idUsuario = row.Field(Of String)("id_usuario")
             Dim titulo = row.Field(Of String)("titulo")
             Dim proposito = row.Field(Of String)("proposito")
-            Dim fechaPublicacion = row.Field(Of DateTime)("fecha_publicacion")
-            Dim tipoProducto = row.Field(Of String)("tipo_producto")
+            Dim fechaPublicacion = row.Field(Of DateTime)("fecha_de_publicacion")
+            Dim tipoProducto = row.Field(Of String)("tipo_de_producto")
 
             Dim i As New ProductosDeInvestigacion With {
                 .IdUsuario = idUsuario,
@@ -74,10 +83,40 @@ Public Class ProductosDeInvestigacionRepository
     End Function
 
     Public Function SelectAllWithId(id As Object) As List(Of ProductosDeInvestigacion) Implements IGenericContract(Of ProductosDeInvestigacion).SelectAllWithId
-        Throw New NotImplementedException()
+        parameters = New Dictionary(Of String, Object)
+        parameters.Add("@id_usuario", id)
+
+        Dim dataTable = ExecuteSelect(querySelectAllId)
+        Dim productosDeInvestigacion As New List(Of ProductosDeInvestigacion)
+
+        For Each row As DataRow In dataTable.Rows
+            Dim idUsuario = row.Field(Of String)("id_usuario")
+            Dim titulo = row.Field(Of String)("titulo")
+            Dim proposito = row.Field(Of String)("proposito")
+            Dim fechaPublicacion = row.Field(Of DateTime)("fecha_de_publicacion")
+            Dim tipoProducto = row.Field(Of String)("tipo_de_producto")
+
+            Dim i As New ProductosDeInvestigacion With {
+                .IdUsuario = idUsuario,
+                .Titulo = titulo,
+                .Proposito = proposito,
+                .FechaPublicacion = fechaPublicacion,
+                .TipoProducto = tipoProducto
+            }
+
+            productosDeInvestigacion.Add(i)
+        Next
+
+        Return productosDeInvestigacion
     End Function
 
     Public Function DeleteSpecific(e As ProductosDeInvestigacion) As Boolean Implements IGenericContract(Of ProductosDeInvestigacion).DeleteSpecific
-        Throw New NotImplementedException()
+        parameters = New Dictionary(Of String, Object)
+        parameters.Add("@id_usuario", e.IdUsuario)
+        parameters.Add("@titulo", e.Titulo)
+        parameters.Add("@proposito", e.Proposito)
+        parameters.Add("@fecha_publicacion", e.FechaPublicacion)
+        parameters.Add("@tipo_producto", e.TipoProducto)
+        Return ExecuteQuery(queryDeleteSpecific)
     End Function
 End Class
