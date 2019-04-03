@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection\Database.vb" />
+    <Compile Include="Contracts\IAdministradorContract.vb" />
     <Compile Include="Contracts\IGenericContract.vb" />
     <Compile Include="Contracts\IUsuarioContract.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -86,9 +87,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Repositories\AdministradorRepository.vb" />
     <Compile Include="Repositories\AdscripcionExternaRepository.vb" />
     <Compile Include="Repositories\AdscripcionTecNMRepository.vb" />
-    <Compile Include="Repositories\AplicacionesRepository.vb" />
+    <Compile Include="Repositories\AplicacionRepository.vb" />
     <Compile Include="Repositories\AsociacionesRepository.vb" />
     <Compile Include="Repositories\CertificacionesRepository.vb" />
     <Compile Include="Repositories\ColegiosRepository.vb" />

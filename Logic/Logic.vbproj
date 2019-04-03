@@ -65,9 +65,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\AdministradorModel.vb" />
     <Compile Include="Models\AdscripcionExternaModel.vb" />
     <Compile Include="Models\AdscripcionTecNMModel.vb" />
-    <Compile Include="Models\AplicacionesModel.vb" />
+    <Compile Include="Models\AplicacionModel.vb" />
     <Compile Include="Models\AsociacionesModel.vb" />
     <Compile Include="Models\CertificacionesModel.vb" />
     <Compile Include="Models\ColegiosModel.vb" />
@@ -98,6 +99,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Validations\AdministradorValidation.vb" />
     <Compile Include="Validations\AdscripcionExternaValidation.vb" />
     <Compile Include="Validations\AdscripcionTecNMValidation.vb" />
     <Compile Include="Validations\AsociacionesValidation.vb" />

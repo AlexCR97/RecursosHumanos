@@ -79,7 +79,7 @@ Public Class UsuarioRepository
         parameters.Add("@id_usuario", id)
 
         Dim dataTable = ExecuteSelect(querySelectId)
-        Dim usuario As Usuario
+        Dim usuario As Usuario = Nothing
 
         For Each row As DataRow In dataTable.Rows
             Dim idUsuario = row.Field(Of String)("id_usuario")

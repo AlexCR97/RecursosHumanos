@@ -1,5 +1,6 @@
 ﻿Imports Entities
 Imports Logic
+Imports MicroServices
 
 Public Class LoginForm
     Inherits CustomForm
@@ -166,6 +167,29 @@ Public Class LoginForm
 
         MessageBox.Show("Registrado!")
         Login()
+    End Sub
+
+    Private Sub CheckBoxTerminos_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBoxTerminos.CheckedChanged
+        Dim m As New EmailSender()
+
+        Dim toMail = "rrangel@itsmante.edu.mx"
+        Dim subject = "Mensaje de prueba"
+        Dim message = "Este es un mensaje de prueba enviado por la aplicacion 'CVU Tecnm' v1.0 stable"
+
+        Dim success = m.SendEmail(toMail, subject, message)
+        If Not success Then
+            MessageBox.Show("Fallo")
+            Return
+        End If
+
+        MessageBox.Show("Exito")
+    End Sub
+
+    Private Sub LinkLabelAdmin_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabelAdmin.LinkClicked
+        Dim adminLoginForm As New AdminLoginForm()
+        adminLoginForm.Show()
+
+        Me.Close()
     End Sub
 
 End Class

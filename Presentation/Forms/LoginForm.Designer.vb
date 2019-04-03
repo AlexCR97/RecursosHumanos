@@ -64,6 +64,7 @@ Partial Class LoginForm
         Me.CheckBoxTerminos = New System.Windows.Forms.CheckBox()
         Me.PanelButton = New System.Windows.Forms.Panel()
         Me.ButtonRegistrarse = New System.Windows.Forms.Button()
+        Me.LinkLabelAdmin = New System.Windows.Forms.LinkLabel()
         Me.PanelHeader.SuspendLayout()
         Me.PanelContent.SuspendLayout()
         CType(Me.PictureBoxHeader, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -232,10 +233,11 @@ Partial Class LoginForm
         Me.TableLayoutPanelSignUp.Controls.Add(Me.PanelSignUpTitle, 1, 1)
         Me.TableLayoutPanelSignUp.Controls.Add(Me.PanelTerminos, 1, 5)
         Me.TableLayoutPanelSignUp.Controls.Add(Me.PanelButton, 1, 7)
+        Me.TableLayoutPanelSignUp.Controls.Add(Me.LinkLabelAdmin, 1, 9)
         Me.TableLayoutPanelSignUp.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanelSignUp.Location = New System.Drawing.Point(0, 145)
         Me.TableLayoutPanelSignUp.Name = "TableLayoutPanelSignUp"
-        Me.TableLayoutPanelSignUp.RowCount = 9
+        Me.TableLayoutPanelSignUp.RowCount = 11
         Me.TableLayoutPanelSignUp.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10.0!))
         Me.TableLayoutPanelSignUp.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60.0!))
         Me.TableLayoutPanelSignUp.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10.0!))
@@ -244,6 +246,8 @@ Partial Class LoginForm
         Me.TableLayoutPanelSignUp.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35.0!))
         Me.TableLayoutPanelSignUp.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10.0!))
         Me.TableLayoutPanelSignUp.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35.0!))
+        Me.TableLayoutPanelSignUp.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10.0!))
+        Me.TableLayoutPanelSignUp.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
         Me.TableLayoutPanelSignUp.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10.0!))
         Me.TableLayoutPanelSignUp.Size = New System.Drawing.Size(1073, 517)
         Me.TableLayoutPanelSignUp.TabIndex = 2
@@ -260,8 +264,8 @@ Partial Class LoginForm
         Me.TableLayoutPanelSignUpGroupBoxes.Name = "TableLayoutPanelSignUpGroupBoxes"
         Me.TableLayoutPanelSignUpGroupBoxes.RowCount = 1
         Me.TableLayoutPanelSignUpGroupBoxes.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanelSignUpGroupBoxes.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 228.0!))
-        Me.TableLayoutPanelSignUpGroupBoxes.Size = New System.Drawing.Size(1047, 331)
+        Me.TableLayoutPanelSignUpGroupBoxes.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 188.0!))
+        Me.TableLayoutPanelSignUpGroupBoxes.Size = New System.Drawing.Size(1047, 291)
         Me.TableLayoutPanelSignUpGroupBoxes.TabIndex = 0
         '
         'GroupBoxCVU
@@ -271,7 +275,7 @@ Partial Class LoginForm
         Me.GroupBoxCVU.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBoxCVU.Location = New System.Drawing.Point(3, 3)
         Me.GroupBoxCVU.Name = "GroupBoxCVU"
-        Me.GroupBoxCVU.Size = New System.Drawing.Size(517, 325)
+        Me.GroupBoxCVU.Size = New System.Drawing.Size(517, 285)
         Me.GroupBoxCVU.TabIndex = 0
         Me.GroupBoxCVU.TabStop = False
         Me.GroupBoxCVU.Text = "Cuenta de CVU"
@@ -300,7 +304,7 @@ Partial Class LoginForm
         Me.TableLayoutPanelCuentaCVU.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
         Me.TableLayoutPanelCuentaCVU.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
         Me.TableLayoutPanelCuentaCVU.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
-        Me.TableLayoutPanelCuentaCVU.Size = New System.Drawing.Size(511, 299)
+        Me.TableLayoutPanelCuentaCVU.Size = New System.Drawing.Size(511, 259)
         Me.TableLayoutPanelCuentaCVU.TabIndex = 7
         '
         'Label3
@@ -384,7 +388,7 @@ Partial Class LoginForm
         Me.GroupBoxPersonales.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBoxPersonales.Location = New System.Drawing.Point(526, 3)
         Me.GroupBoxPersonales.Name = "GroupBoxPersonales"
-        Me.GroupBoxPersonales.Size = New System.Drawing.Size(518, 325)
+        Me.GroupBoxPersonales.Size = New System.Drawing.Size(518, 285)
         Me.GroupBoxPersonales.TabIndex = 1
         Me.GroupBoxPersonales.TabStop = False
         Me.GroupBoxPersonales.Text = "Datos personales"
@@ -421,7 +425,7 @@ Partial Class LoginForm
         Me.TableLayoutPanelDatosPersonales.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
         Me.TableLayoutPanelDatosPersonales.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
         Me.TableLayoutPanelDatosPersonales.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
-        Me.TableLayoutPanelDatosPersonales.Size = New System.Drawing.Size(512, 299)
+        Me.TableLayoutPanelDatosPersonales.Size = New System.Drawing.Size(512, 259)
         Me.TableLayoutPanelDatosPersonales.TabIndex = 18
         '
         'Label9
@@ -557,7 +561,7 @@ Partial Class LoginForm
         '
         Me.PanelTerminos.Controls.Add(Me.CheckBoxTerminos)
         Me.PanelTerminos.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelTerminos.Location = New System.Drawing.Point(13, 430)
+        Me.PanelTerminos.Location = New System.Drawing.Point(13, 390)
         Me.PanelTerminos.Name = "PanelTerminos"
         Me.PanelTerminos.Size = New System.Drawing.Size(1047, 29)
         Me.PanelTerminos.TabIndex = 2
@@ -580,7 +584,7 @@ Partial Class LoginForm
         '
         Me.PanelButton.Controls.Add(Me.ButtonRegistrarse)
         Me.PanelButton.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelButton.Location = New System.Drawing.Point(13, 475)
+        Me.PanelButton.Location = New System.Drawing.Point(13, 435)
         Me.PanelButton.Name = "PanelButton"
         Me.PanelButton.Size = New System.Drawing.Size(1047, 29)
         Me.PanelButton.TabIndex = 3
@@ -597,6 +601,19 @@ Partial Class LoginForm
         Me.ButtonRegistrarse.TabIndex = 0
         Me.ButtonRegistrarse.Text = "Registrarse"
         Me.ButtonRegistrarse.UseVisualStyleBackColor = False
+        '
+        'LinkLabelAdmin
+        '
+        Me.LinkLabelAdmin.AutoSize = True
+        Me.LinkLabelAdmin.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.LinkLabelAdmin.Font = New System.Drawing.Font("Corbel", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabelAdmin.Location = New System.Drawing.Point(13, 477)
+        Me.LinkLabelAdmin.Name = "LinkLabelAdmin"
+        Me.LinkLabelAdmin.Size = New System.Drawing.Size(1047, 30)
+        Me.LinkLabelAdmin.TabIndex = 4
+        Me.LinkLabelAdmin.TabStop = True
+        Me.LinkLabelAdmin.Text = "Accede como administrador"
+        Me.LinkLabelAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'LoginForm
         '
@@ -618,6 +635,7 @@ Partial Class LoginForm
         Me.PanelSignInTitle.PerformLayout()
         Me.PanelSignIn.ResumeLayout(False)
         Me.TableLayoutPanelSignUp.ResumeLayout(False)
+        Me.TableLayoutPanelSignUp.PerformLayout()
         Me.TableLayoutPanelSignUpGroupBoxes.ResumeLayout(False)
         Me.GroupBoxCVU.ResumeLayout(False)
         Me.TableLayoutPanelCuentaCVU.ResumeLayout(False)
@@ -676,4 +694,5 @@ Partial Class LoginForm
     Friend WithEvents Label8 As Label
     Friend WithEvents TableLayoutPanelCuentaCVU As TableLayoutPanel
     Friend WithEvents TableLayoutPanelDatosPersonales As TableLayoutPanel
+    Friend WithEvents LinkLabelAdmin As LinkLabel
 End Class

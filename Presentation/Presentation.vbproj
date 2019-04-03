@@ -187,6 +187,18 @@
     <Compile Include="Dialogues\PerfilAcademico\TitulosAcademicosDialog.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\AdminMainForm.Designer.vb">
+      <DependentUpon>AdminMainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminMainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminLoginForm.Designer.vb">
+      <DependentUpon>AdminLoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminLoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\CustomForm.Designer.vb">
       <DependentUpon>CustomForm.vb</DependentUpon>
     </Compile>
@@ -400,6 +412,12 @@
     <EmbeddedResource Include="Dialogues\PerfilAcademico\TitulosAcademicosDialog.resx">
       <DependentUpon>TitulosAcademicosDialog.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminLoginForm.resx">
+      <DependentUpon>AdminLoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminMainForm.resx">
+      <DependentUpon>AdminMainForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomForm.resx">
       <DependentUpon>CustomForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -500,6 +518,10 @@
       <Project>{928e838e-e7c7-45ec-8903-542efb6b446f}</Project>
       <Name>Logic</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MicroServices\MicroServices.vbproj">
+      <Project>{75d45fa7-f0bc-473b-afc6-dabb698f33cd}</Project>
+      <Name>MicroServices</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\imageSep.png" />
@@ -542,6 +564,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iconResume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules\Admin\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
