@@ -24,19 +24,19 @@ Partial Class AdminMainForm
     Private Sub InitializeComponent()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.ButtonChangeLogo = New System.Windows.Forms.Button()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ButtonChangeColor = New System.Windows.Forms.Button()
+        Me.PanelTitle = New System.Windows.Forms.Panel()
         Me.LabelAdministrador = New System.Windows.Forms.Label()
         Me.PictureBoxSignOut = New System.Windows.Forms.PictureBox()
-        Me.ButtonChangeLogo = New System.Windows.Forms.Button()
-        Me.ButtonChangeColor = New System.Windows.Forms.Button()
         Me.PanelHeader.SuspendLayout()
         Me.PanelContent.SuspendLayout()
         CType(Me.PictureBoxHeader, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
-        Me.Panel1.SuspendLayout()
+        Me.PanelTitle.SuspendLayout()
         CType(Me.PictureBoxSignOut, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -59,7 +59,7 @@ Partial Class AdminMainForm
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel3, 0, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.Panel1, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.PanelTitle, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBoxSignOut, 0, 5)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
@@ -92,6 +92,20 @@ Partial Class AdminMainForm
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(1012, 144)
         Me.TableLayoutPanel2.TabIndex = 0
         '
+        'ButtonChangeLogo
+        '
+        Me.ButtonChangeLogo.BackColor = System.Drawing.Color.SteelBlue
+        Me.ButtonChangeLogo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ButtonChangeLogo.Font = New System.Drawing.Font("Corbel", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonChangeLogo.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.ButtonChangeLogo.Location = New System.Drawing.Point(384, 35)
+        Me.ButtonChangeLogo.Margin = New System.Windows.Forms.Padding(3, 35, 3, 35)
+        Me.ButtonChangeLogo.Name = "ButtonChangeLogo"
+        Me.ButtonChangeLogo.Size = New System.Drawing.Size(244, 74)
+        Me.ButtonChangeLogo.TabIndex = 1
+        Me.ButtonChangeLogo.Text = "Cambiar logo"
+        Me.ButtonChangeLogo.UseVisualStyleBackColor = False
+        '
         'TableLayoutPanel3
         '
         Me.TableLayoutPanel3.ColumnCount = 3
@@ -108,15 +122,29 @@ Partial Class AdminMainForm
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(1012, 144)
         Me.TableLayoutPanel3.TabIndex = 1
         '
-        'Panel1
+        'ButtonChangeColor
         '
-        Me.Panel1.BackColor = System.Drawing.Color.MidnightBlue
-        Me.Panel1.Controls.Add(Me.LabelAdministrador)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(3, 3)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1012, 94)
-        Me.Panel1.TabIndex = 2
+        Me.ButtonChangeColor.BackColor = System.Drawing.Color.SteelBlue
+        Me.ButtonChangeColor.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ButtonChangeColor.Font = New System.Drawing.Font("Corbel", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonChangeColor.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.ButtonChangeColor.Location = New System.Drawing.Point(384, 35)
+        Me.ButtonChangeColor.Margin = New System.Windows.Forms.Padding(3, 35, 3, 35)
+        Me.ButtonChangeColor.Name = "ButtonChangeColor"
+        Me.ButtonChangeColor.Size = New System.Drawing.Size(244, 74)
+        Me.ButtonChangeColor.TabIndex = 1
+        Me.ButtonChangeColor.Text = "Cambiar color"
+        Me.ButtonChangeColor.UseVisualStyleBackColor = False
+        '
+        'PanelTitle
+        '
+        Me.PanelTitle.BackColor = System.Drawing.Color.MidnightBlue
+        Me.PanelTitle.Controls.Add(Me.LabelAdministrador)
+        Me.PanelTitle.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelTitle.Location = New System.Drawing.Point(3, 3)
+        Me.PanelTitle.Name = "PanelTitle"
+        Me.PanelTitle.Size = New System.Drawing.Size(1012, 94)
+        Me.PanelTitle.TabIndex = 2
         '
         'LabelAdministrador
         '
@@ -142,34 +170,6 @@ Partial Class AdminMainForm
         Me.PictureBoxSignOut.TabIndex = 3
         Me.PictureBoxSignOut.TabStop = False
         '
-        'ButtonChangeLogo
-        '
-        Me.ButtonChangeLogo.BackColor = System.Drawing.Color.SteelBlue
-        Me.ButtonChangeLogo.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ButtonChangeLogo.Font = New System.Drawing.Font("Corbel", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonChangeLogo.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.ButtonChangeLogo.Location = New System.Drawing.Point(384, 35)
-        Me.ButtonChangeLogo.Margin = New System.Windows.Forms.Padding(3, 35, 3, 35)
-        Me.ButtonChangeLogo.Name = "ButtonChangeLogo"
-        Me.ButtonChangeLogo.Size = New System.Drawing.Size(244, 74)
-        Me.ButtonChangeLogo.TabIndex = 1
-        Me.ButtonChangeLogo.Text = "Cambiar logo"
-        Me.ButtonChangeLogo.UseVisualStyleBackColor = False
-        '
-        'ButtonChangeColor
-        '
-        Me.ButtonChangeColor.BackColor = System.Drawing.Color.SteelBlue
-        Me.ButtonChangeColor.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ButtonChangeColor.Font = New System.Drawing.Font("Corbel", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonChangeColor.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.ButtonChangeColor.Location = New System.Drawing.Point(384, 35)
-        Me.ButtonChangeColor.Margin = New System.Windows.Forms.Padding(3, 35, 3, 35)
-        Me.ButtonChangeColor.Name = "ButtonChangeColor"
-        Me.ButtonChangeColor.Size = New System.Drawing.Size(244, 74)
-        Me.ButtonChangeColor.TabIndex = 1
-        Me.ButtonChangeColor.Text = "Cambiar color"
-        Me.ButtonChangeColor.UseVisualStyleBackColor = False
-        '
         'AdminMainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -184,7 +184,7 @@ Partial Class AdminMainForm
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
-        Me.Panel1.ResumeLayout(False)
+        Me.PanelTitle.ResumeLayout(False)
         CType(Me.PictureBoxSignOut, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -193,7 +193,7 @@ Partial Class AdminMainForm
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents PanelTitle As Panel
     Friend WithEvents LabelAdministrador As Label
     Friend WithEvents PictureBoxSignOut As PictureBox
     Friend WithEvents ButtonChangeLogo As Button

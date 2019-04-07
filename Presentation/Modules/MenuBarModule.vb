@@ -4,6 +4,8 @@
 
     Public Sub SetMainForm(mainForm As MainForm)
         Me.mainForm = mainForm
+
+        Me.BackColor = My.Settings.MainColor
     End Sub
 
     Private Sub PictureBoxUser_Click(sender As Object, e As EventArgs) Handles PictureBoxUser.Click

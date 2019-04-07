@@ -103,6 +103,12 @@
     <Compile Include="CustomControls\GuardarButton.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Dialogues\ActivationDialog.Designer.vb">
+      <DependentUpon>ActivationDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\ActivationDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dialogues\CustomDialog.Designer.vb">
       <DependentUpon>CustomDialog.vb</DependentUpon>
     </Compile>
@@ -369,6 +375,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\GuardarButton.resx">
       <DependentUpon>GuardarButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\ActivationDialog.resx">
+      <DependentUpon>ActivationDialog.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogues\CustomDialog.resx">
       <DependentUpon>CustomDialog.vb</DependentUpon>

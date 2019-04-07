@@ -66,4 +66,16 @@ Public Class AdministradorRepository
     Public Function SelectAllWithId(id As Object) As List(Of Administrador) Implements IGenericContract(Of Administrador).SelectAllWithId
         Throw New NotImplementedException()
     End Function
+
+    Public Function CheckVerifiedEmail(e As Administrador) As Boolean Implements IUsuarioContract(Of Administrador).CheckVerifiedEmail
+        Throw New NotImplementedException()
+    End Function
+
+    Public Function ActivateAccount(e As Administrador) As Boolean Implements IUsuarioContract(Of Administrador).ActivateAccount
+        Throw New NotImplementedException()
+    End Function
+
+    Public Function CheckActivationId(e As Administrador) As Boolean Implements IUsuarioContract(Of Administrador).CheckActivationId
+        Throw New NotImplementedException()
+    End Function
 End Class

@@ -10,6 +10,9 @@
 
     Public Sub New()
         InitializeComponent()
+
+        Me.PanelHeader.BackColor = My.Settings.MainColor
+        Me.PanelFooter.BackColor = My.Settings.MainColor
     End Sub
 
     Public Sub New(mainForm As MainForm)
@@ -17,9 +20,12 @@
 
         Me.mainForm = mainForm
         mainForm.Enabled = False
+
+        Me.PanelHeader.BackColor = My.Settings.MainColor
+        Me.PanelFooter.BackColor = My.Settings.MainColor
     End Sub
 
-    Public Sub ReturnControl()
+    Public Overridable Sub ReturnControl()
         mainForm.Enabled = True
         Me.Close()
     End Sub

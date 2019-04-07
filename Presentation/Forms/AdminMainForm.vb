@@ -8,6 +8,8 @@ Public Class AdminMainForm
 
     Public Sub New()
         InitializeComponent()
+
+        Me.PanelTitle.BackColor = My.Settings.MainColor
     End Sub
 
     Public Sub InitializeWithAdmin(admin As Administrador)
@@ -26,23 +28,9 @@ Public Class AdminMainForm
             Return
         End If
 
-        Dim aplicacion As New AplicacionModel() With {
-            .Entity = New Aplicacion() With {
-                .ColorR = dialog.Color.R,
-                .ColorG = dialog.Color.G,
-                .ColorB = dialog.Color.B,
-                .ColorA = dialog.Color.A
-            },
-            .State = AplicacionModel.STATE_UPDATE
-        }
-
-        Dim success = aplicacion.ExecuteChanges()
-        If Not success Then
-            MessageBox.Show("Ocurrio un error al actualizar el color")
-            Return
-        End If
-
-        MessageBox.Show("Color acutalizado!")
+        My.Settings.MainColor = dialog.Color
+        My.Settings.Save()
+        Me.PanelTitle.BackColor = My.Settings.MainColor
     End Sub
 
     Private Sub PictureBoxSignOut_Click(sender As Object, e As EventArgs) Handles PictureBoxSignOut.Click

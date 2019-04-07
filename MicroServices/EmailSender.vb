@@ -9,6 +9,7 @@ Public Class EmailSender
 
     Public Sub New()
         Me.fromMail = "castillo.ramirez.16225@itsmante.edu.mx"
+        Me.fromPassword = "sam.loves.ham"
         Me.host = "smtp.gmail.com"
     End Sub
 

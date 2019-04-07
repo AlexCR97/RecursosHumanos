@@ -5,7 +5,7 @@ Imports MicroServices
 Public Class LoginForm
     Inherits CustomForm
 
-    Private usuario As Usuario = New Usuario()
+    Public usuario As Usuario = New Usuario()
     Private usuarioModel As UsuarioModel = New UsuarioModel()
     Private usuarioValidation As UsuarioValidation = New UsuarioValidation()
 
@@ -13,8 +13,25 @@ Public Class LoginForm
     Private datosPersonalesModel As DatosPersonalesModel = New DatosPersonalesModel()
     Private datosPersonalesValidation As DatosPersonalesValidation = New DatosPersonalesValidation()
 
-    Private Sub Login()
+    Public Sub New()
+        InitializeComponent()
+        Me.PanelSignIn.BackColor = My.Settings.MainColor
+    End Sub
+
+    Public Sub Login()
         usuario = usuarioModel.GetEntityWithId()
+
+        usuarioModel = New UsuarioModel() With {
+            .Entity = usuario,
+            .State = UsuarioModel.STATE_CHECK_VERIFIED_EMAIL
+        }
+
+        Dim success = usuarioModel.ExecuteChanges()
+        If Not success Then
+            MessageBox.Show("No has verificado tu cuenta! Revisa la bandeja de entrada de tu correo electronico para obtener el id de activacion de tu cuenta")
+            SendActivationId()
+            Return
+        End If
 
         Dim mainForm As MainForm = New MainForm()
         mainForm.InitializeWithUser(usuario)
@@ -143,6 +160,10 @@ Public Class LoginForm
             Return
         End If
 
+        Dim keyGenerator As New UniqueKeyGenerator()
+        usuario.IdActivacion = keyGenerator.GenerateKey()
+        usuario.CuentaVerificada = False
+
         usuarioModel = New UsuarioModel() With {
             .Entity = usuario,
             .State = UsuarioModel.STATE_INSERT
@@ -166,23 +187,26 @@ Public Class LoginForm
         End If
 
         MessageBox.Show("Registrado!")
-        Login()
+        SendActivationId()
+    End Sub
+
+    Private Sub SendActivationId()
+        Dim sender As New EmailSender()
+
+        Dim toMail = usuario.IdUsuario
+        Dim subject = "RRHH System - Id de activacion de cuenta"
+        Dim message = "Ingrese el siguiente id en el sistema para activar su cuenta: " + usuario.IdActivacion
+
+        Dim success = sender.SendEmail(toMail, subject, message)
+        If Not success Then
+            MessageBox.Show("Ocurrio un error al enviar el id de activacion")
+        End If
+
+        Dim dialog As New ActivationDialog(Me)
+        dialog.Show()
     End Sub
 
     Private Sub CheckBoxTerminos_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBoxTerminos.CheckedChanged
-        Dim m As New EmailSender()
-
-        Dim toMail = "rrangel@itsmante.edu.mx"
-        Dim subject = "Mensaje de prueba"
-        Dim message = "Este es un mensaje de prueba enviado por la aplicacion 'CVU Tecnm' v1.0 stable"
-
-        Dim success = m.SendEmail(toMail, subject, message)
-        If Not success Then
-            MessageBox.Show("Fallo")
-            Return
-        End If
-
-        MessageBox.Show("Exito")
     End Sub
 
     Private Sub LinkLabelAdmin_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabelAdmin.LinkClicked

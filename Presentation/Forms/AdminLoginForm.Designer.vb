@@ -23,7 +23,7 @@ Partial Class AdminLoginForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PanelAccessSystem = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
@@ -37,7 +37,7 @@ Partial Class AdminLoginForm
         Me.PanelContent.SuspendLayout()
         CType(Me.PictureBoxHeader, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
-        Me.Panel1.SuspendLayout()
+        Me.PanelAccessSystem.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -62,7 +62,7 @@ Partial Class AdminLoginForm
         '
         Me.TableLayoutPanel1.ColumnCount = 1
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.Panel1, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.PanelAccessSystem, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.LinkLabelUser, 0, 2)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
@@ -74,15 +74,15 @@ Partial Class AdminLoginForm
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1055, 517)
         Me.TableLayoutPanel1.TabIndex = 0
         '
-        'Panel1
+        'PanelAccessSystem
         '
-        Me.Panel1.BackColor = System.Drawing.Color.MidnightBlue
-        Me.Panel1.Controls.Add(Me.TableLayoutPanel3)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(3, 171)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1049, 174)
-        Me.Panel1.TabIndex = 1
+        Me.PanelAccessSystem.BackColor = System.Drawing.Color.MidnightBlue
+        Me.PanelAccessSystem.Controls.Add(Me.TableLayoutPanel3)
+        Me.PanelAccessSystem.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelAccessSystem.Location = New System.Drawing.Point(3, 171)
+        Me.PanelAccessSystem.Name = "PanelAccessSystem"
+        Me.PanelAccessSystem.Size = New System.Drawing.Size(1049, 174)
+        Me.PanelAccessSystem.TabIndex = 1
         '
         'TableLayoutPanel3
         '
@@ -214,7 +214,7 @@ Partial Class AdminLoginForm
         CType(Me.PictureBoxHeader, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
+        Me.PanelAccessSystem.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
@@ -230,7 +230,7 @@ Partial Class AdminLoginForm
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents TextBoxEmail As TextBox
     Friend WithEvents TextBoxPassword As TextBox
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents PanelAccessSystem As Panel
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents ButtonSignIn As Button
     Friend WithEvents PictureBox1 As PictureBox

@@ -4,6 +4,11 @@ Imports Logic
 Public Class AdminLoginForm
     Inherits CustomForm
 
+    Public Sub New()
+        InitializeComponent()
+        Me.PanelAccessSystem.BackColor = My.Settings.MainColor
+    End Sub
+
     Private Function ValidateCuenta(correo As String, contrasena As String) As Boolean
 
         Dim admin = New Administrador() With {

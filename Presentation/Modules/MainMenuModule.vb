@@ -2,6 +2,14 @@
 
     Private mainForm As MainForm
 
+    Public Sub New()
+        InitializeComponent()
+
+        Me.ButtonDatosGenerales.BackColor = My.Settings.MainColor
+        Me.ButtonPerfilAcademico.BackColor = My.Settings.MainColor
+        Me.ButtonResumen.BackColor = My.Settings.MainColor
+    End Sub
+
     Public Sub SetMainForm(mainForm As MainForm)
         Me.mainForm = mainForm
     End Sub

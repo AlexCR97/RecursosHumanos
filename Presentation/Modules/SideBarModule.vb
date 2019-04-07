@@ -7,6 +7,13 @@
 
     Private expanded = True
 
+    Public Sub New()
+        InitializeComponent()
+
+        Dim color = My.Settings.MainColor
+        Me.BackColor = ControlPaint.Dark(color)
+    End Sub
+
     Public Sub SetMainForm(mainForm As MainForm)
         Me.mainForm = mainForm
     End Sub

@@ -5,9 +5,12 @@ Public Class UsuarioModel
     Inherits Model(Of Usuario)
 
     Public Const STATE_CHECK_EXISTANCE = 4
+    Public Const STATE_CHECK_VERIFIED_EMAIL = 5
+    Public Const STATE_CHECK_ACTIVATION_ID = 6
+    Public Const STATE_ACTIVATE_ACCOUNT = 7
 
     Public Entity As Usuario
-    Private repository = New UsuarioRepository()
+    Private repository As UsuarioRepository = New UsuarioRepository()
 
     Public Sub New()
 
@@ -30,6 +33,15 @@ Public Class UsuarioModel
 
             Case STATE_CHECK_EXISTANCE
                 Return repository.CheckExistance(Entity)
+
+            Case STATE_CHECK_VERIFIED_EMAIL
+                Return repository.CheckVerifiedEmail(Entity)
+
+            Case STATE_CHECK_ACTIVATION_ID
+                Return repository.CheckActivationId(Entity)
+
+            Case STATE_ACTIVATE_ACCOUNT
+                Return repository.ActivateAccount(Entity)
         End Select
 
         Return False
