@@ -33,15 +33,15 @@ Public Class DatosPersonalesValidation
     End Function
 
     Public Function ValidateCurp() As Boolean
-        Return Not String.IsNullOrWhiteSpace(Entity.Curp)
+        Return Not String.IsNullOrWhiteSpace(Entity.Curp) And Entity.Curp.Length <= 18
     End Function
 
     Public Function ValidateRfc() As Boolean
-        Return Not String.IsNullOrWhiteSpace(Entity.Rfc)
+        Return Not String.IsNullOrWhiteSpace(Entity.Rfc) And Entity.Rfc.Length <= 13
     End Function
 
     Public Function ValidateCvu() As Boolean
-        Return True
+        Return Not String.IsNullOrWhiteSpace(Entity.Cvu) And Entity.Cvu.Length <= 20
     End Function
 
     Public Function ValidateBiografia() As Boolean

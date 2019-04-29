@@ -81,6 +81,7 @@
     <Compile Include="Models\OtrosMediosDeContactoModel.vb" />
     <Compile Include="Models\PremiosModel.vb" />
     <Compile Include="Models\ProductosDeInvestigacionModel.vb" />
+    <Compile Include="Models\SystemModel.vb" />
     <Compile Include="Models\TelefonosModel.vb" />
     <Compile Include="Models\TitulosAcademicosModel.vb" />
     <Compile Include="Models\UsuarioModel.vb" />
@@ -124,6 +125,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

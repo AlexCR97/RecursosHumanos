@@ -1,4 +1,5 @@
-﻿Imports Entities
+﻿Imports System.Threading
+Imports Entities
 Imports Logic
 Imports MicroServices
 
@@ -16,6 +17,9 @@ Public Class LoginForm
     Public Sub New()
         InitializeComponent()
         Me.PanelSignIn.BackColor = My.Settings.MainColor
+
+        ' Start backup thread
+        StartBackupThread()
     End Sub
 
     Public Sub Login()
@@ -214,6 +218,36 @@ Public Class LoginForm
         adminLoginForm.Show()
 
         Me.Close()
+    End Sub
+
+    ' BACKUP THREAD
+    Private Sub StartBackupThread()
+        Dim t As New Thread(AddressOf CheckForAutomaticBackups) With {
+            .IsBackground = True
+        }
+
+        t.Start()
+    End Sub
+
+    Private Sub CheckForAutomaticBackups()
+        While True
+            Dim now As DateTime = DateTime.Now
+            Dim backupDate As DateTime = My.Settings.BackupDate
+
+            If now > backupDate Then
+                Dim system As New SystemModel()
+                Dim success = system.Backup(SystemModel.BACKUP_TYPE_AUTOMATIC)
+
+                If Not success Then
+                    MessageBox.Show("Ocurrio un error al realizar el respaldo automatico :(")
+                Else
+                    MessageBox.Show("Respaldo automatico realizado :D")
+                End If
+
+                My.Settings.BackupDate = now.AddHours(24)
+                My.Settings.Save()
+            End If
+        End While
     End Sub
 
 End Class

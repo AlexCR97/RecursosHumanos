@@ -5,5 +5,8 @@
     <Setting Name="MainColor" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">MidnightBlue</Value>
     </Setting>
+    <Setting Name="BackupDate" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">04/16/2019 14:27:00</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

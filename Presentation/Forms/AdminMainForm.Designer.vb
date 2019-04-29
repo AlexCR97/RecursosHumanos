@@ -30,6 +30,8 @@ Partial Class AdminMainForm
         Me.PanelTitle = New System.Windows.Forms.Panel()
         Me.LabelAdministrador = New System.Windows.Forms.Label()
         Me.PictureBoxSignOut = New System.Windows.Forms.PictureBox()
+        Me.ButtonBackup = New System.Windows.Forms.Button()
+        Me.ButtonRestore = New System.Windows.Forms.Button()
         Me.PanelHeader.SuspendLayout()
         Me.PanelContent.SuspendLayout()
         CType(Me.PictureBoxHeader, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -78,11 +80,12 @@ Partial Class AdminMainForm
         '
         'TableLayoutPanel2
         '
-        Me.TableLayoutPanel2.ColumnCount = 3
+        Me.TableLayoutPanel2.ColumnCount = 4
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.ButtonChangeColor, 2, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.ButtonChangeLogo, 1, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 178)
@@ -98,7 +101,7 @@ Partial Class AdminMainForm
         Me.ButtonChangeLogo.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ButtonChangeLogo.Font = New System.Drawing.Font("Corbel", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonChangeLogo.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.ButtonChangeLogo.Location = New System.Drawing.Point(384, 35)
+        Me.ButtonChangeLogo.Location = New System.Drawing.Point(259, 35)
         Me.ButtonChangeLogo.Margin = New System.Windows.Forms.Padding(3, 35, 3, 35)
         Me.ButtonChangeLogo.Name = "ButtonChangeLogo"
         Me.ButtonChangeLogo.Size = New System.Drawing.Size(244, 74)
@@ -108,12 +111,13 @@ Partial Class AdminMainForm
         '
         'TableLayoutPanel3
         '
-        Me.TableLayoutPanel3.ColumnCount = 3
+        Me.TableLayoutPanel3.ColumnCount = 4
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel3.Controls.Add(Me.ButtonChangeColor, 1, 0)
+        Me.TableLayoutPanel3.Controls.Add(Me.ButtonBackup, 1, 0)
+        Me.TableLayoutPanel3.Controls.Add(Me.ButtonRestore, 2, 0)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(3, 328)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
@@ -128,7 +132,7 @@ Partial Class AdminMainForm
         Me.ButtonChangeColor.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ButtonChangeColor.Font = New System.Drawing.Font("Corbel", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonChangeColor.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.ButtonChangeColor.Location = New System.Drawing.Point(384, 35)
+        Me.ButtonChangeColor.Location = New System.Drawing.Point(509, 35)
         Me.ButtonChangeColor.Margin = New System.Windows.Forms.Padding(3, 35, 3, 35)
         Me.ButtonChangeColor.Name = "ButtonChangeColor"
         Me.ButtonChangeColor.Size = New System.Drawing.Size(244, 74)
@@ -170,6 +174,34 @@ Partial Class AdminMainForm
         Me.PictureBoxSignOut.TabIndex = 3
         Me.PictureBoxSignOut.TabStop = False
         '
+        'ButtonBackup
+        '
+        Me.ButtonBackup.BackColor = System.Drawing.Color.SteelBlue
+        Me.ButtonBackup.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ButtonBackup.Font = New System.Drawing.Font("Corbel", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonBackup.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.ButtonBackup.Location = New System.Drawing.Point(259, 35)
+        Me.ButtonBackup.Margin = New System.Windows.Forms.Padding(3, 35, 3, 35)
+        Me.ButtonBackup.Name = "ButtonBackup"
+        Me.ButtonBackup.Size = New System.Drawing.Size(244, 74)
+        Me.ButtonBackup.TabIndex = 2
+        Me.ButtonBackup.Text = "Crear respaldo"
+        Me.ButtonBackup.UseVisualStyleBackColor = False
+        '
+        'ButtonRestore
+        '
+        Me.ButtonRestore.BackColor = System.Drawing.Color.SteelBlue
+        Me.ButtonRestore.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ButtonRestore.Font = New System.Drawing.Font("Corbel", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonRestore.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.ButtonRestore.Location = New System.Drawing.Point(509, 35)
+        Me.ButtonRestore.Margin = New System.Windows.Forms.Padding(3, 35, 3, 35)
+        Me.ButtonRestore.Name = "ButtonRestore"
+        Me.ButtonRestore.Size = New System.Drawing.Size(244, 74)
+        Me.ButtonRestore.TabIndex = 3
+        Me.ButtonRestore.Text = "Restaurar"
+        Me.ButtonRestore.UseVisualStyleBackColor = False
+        '
         'AdminMainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -198,4 +230,6 @@ Partial Class AdminMainForm
     Friend WithEvents PictureBoxSignOut As PictureBox
     Friend WithEvents ButtonChangeLogo As Button
     Friend WithEvents ButtonChangeColor As Button
+    Friend WithEvents ButtonBackup As Button
+    Friend WithEvents ButtonRestore As Button
 End Class

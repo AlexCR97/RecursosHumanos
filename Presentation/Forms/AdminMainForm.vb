@@ -1,5 +1,6 @@
 ﻿Imports Entities
 Imports Logic
+Imports MicroServices
 
 Public Class AdminMainForm
     Inherits CustomForm
@@ -41,4 +42,30 @@ Public Class AdminMainForm
 
         Application.Restart()
     End Sub
+
+    Private Sub ButtonBackup_Click(sender As Object, e As EventArgs) Handles ButtonBackup.Click
+        Dim folderBrowser As New FolderBrowserDialog()
+
+        Dim result = folderBrowser.ShowDialog()
+        If result <> DialogResult.OK Then
+            Return
+        End If
+
+        Dim folderPath = folderBrowser.SelectedPath
+
+        Dim system As New SystemModel()
+        Dim success = system.Backup(folderPath, SystemModel.BACKUP_TYPE_MANUAL)
+        If Not success Then
+            MessageBox.Show("El respaldo no pudo ser creado :(")
+            Return
+        End If
+
+        MessageBox.Show("Respaldo creado :D")
+    End Sub
+
+    Private Sub ButtonRestore_Click(sender As Object, e As EventArgs) Handles ButtonRestore.Click
+        Dim dialog As New RestoreDatabaseDialog(Me)
+        dialog.Show()
+    End Sub
+
 End Class

@@ -193,6 +193,12 @@
     <Compile Include="Dialogues\PerfilAcademico\TitulosAcademicosDialog.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Dialogues\RestoreDatabaseDialog.Designer.vb">
+      <DependentUpon>RestoreDatabaseDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\RestoreDatabaseDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\AdminMainForm.Designer.vb">
       <DependentUpon>AdminMainForm.vb</DependentUpon>
     </Compile>
@@ -420,6 +426,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogues\PerfilAcademico\TitulosAcademicosDialog.resx">
       <DependentUpon>TitulosAcademicosDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\RestoreDatabaseDialog.resx">
+      <DependentUpon>RestoreDatabaseDialog.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminLoginForm.resx">
       <DependentUpon>AdminLoginForm.vb</DependentUpon>

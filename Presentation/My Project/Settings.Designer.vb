@@ -65,6 +65,18 @@ Namespace My
                 Me("MainColor") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("04/16/2019 14:27:00")>  _
+        Public Property BackupDate() As Date
+            Get
+                Return CType(Me("BackupDate"),Date)
+            End Get
+            Set
+                Me("BackupDate") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
